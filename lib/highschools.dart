@@ -1,9 +1,40 @@
 import 'dart:html';
 
+class HighSchool {
+  final String name;
+  final List<String> classTypes;
+  final String studyLength;
+  final List<String> contact;
+  final String info;
+  final String infoTitle;
+  final List<String> practiceTests;
+  final String date;
+  final String vidUrl;
+  final int students;
+  final int succesrate;
+  final String picture;
+  final String web;
+
+  const HighSchool(
+      {this.name,
+      this.students,
+      this.infoTitle,
+      this.classTypes,
+      this.studyLength,
+      this.contact,
+      this.info,
+      this.practiceTests,
+      this.date,
+      this.succesrate,
+      this.picture,
+      this.web,
+      this.vidUrl});
+}
+
 const postova = HighSchool(
     name: "Gymnázium, Poštová 9, Košice",
     classTypes: ["všeobecná", "anglická", "matematická"],
-    studyLength: 4,
+    studyLength: "4",
     contact: [
       "Poštová 9, Košice",
       "055/6226604",
@@ -32,7 +63,7 @@ const dopravna = HighSchool(
     "prevádzka a ekonomika dopravy",
     "technika a prevádzka dopravy, dopravná akadémia"
   ],
-  studyLength: 2,
+  studyLength: "4",
   contact: [
     "Hlavná 113, 040 01 Košice",
     "+42155/727 70 11",
@@ -52,37 +83,6 @@ const dopravna = HighSchool(
   web: "https://spsdke.edupage.org/",
 );
 
-class HighSchool {
-  final String name;
-  final List<String> classTypes;
-  final int studyLength;
-  final List<String> contact;
-  final String info;
-  final String infoTitle;
-  final List<String> practiceTests;
-  final String date;
-  final String vidUrl;
-  final int students;
-  final int succesrate;
-  final String picture;
-  final String web;
-
-  const HighSchool(
-      {this.name,
-      this.students,
-      this.infoTitle,
-      this.classTypes,
-      this.studyLength,
-      this.contact,
-      this.info,
-      this.practiceTests,
-      this.date,
-      this.succesrate,
-      this.picture,
-      this.web,
-      this.vidUrl});
-}
-
 const srobarova = HighSchool(
   name: "Gymnázium, Šrobárova 1, Košice",
   classTypes: [
@@ -92,7 +92,7 @@ const srobarova = HighSchool(
     "matematická",
     "informatická"
   ],
-  studyLength: 4,
+  studyLength: "4",
   contact: [
     "Šrobárova 1, Košice",
     "055/6226604",
@@ -121,7 +121,7 @@ const spse = HighSchool(
       "počitačové systémy",
       "informačné a sieťové technológie",
     ],
-    studyLength: 4,
+    studyLength: "4",
     contact: [
       "Komenského 44, Košice",
       "055/7968151",
@@ -137,3 +137,69 @@ const spse = HighSchool(
     vidUrl: "",
     students: 834,
     web: "https://www.spseke.sk/");
+
+const gpm = HighSchool(
+    name: "Gymnázium, Park mládeže 5, Košice",
+    classTypes: [
+      "Bilingválne slovensko-španielske štúdium",
+      "Bilingválne slovensko-anglické štúdium",
+      "Klasické štúdium",
+      "Štúdium s rozšíreným vyučovaním anglického jazyka",
+    ],
+    studyLength: "4-5",
+    contact: [
+      "Park mládeže 5, 040 01 Košice",
+      "055/6335470",
+      "office@gpm.sk",
+      "Mgr.  Milan Marinčák "
+    ],
+    info:
+        "ponúkame študentom moderne vybavené odborné učebne na vyučovanie matematiky, fyziky, chémie, biológie, cudzích jazykov a na výuku informatiky máme vybavené 2 multimediálne učebne vhodné aj pre výučbu ostatných predmetov, ktoré sú zahrnuté do školského vzdelávacieho programu. Navyše v každej učebni je nainštalovaný dataprojektor.Študentom, ktorí sú zo vzdialenejších miest, ponúkame možnosť ubytovania v stredoškolských domovoch mládeže. Pri úprave priestorov našej školy – tried, ale i chodieb, sa snažíme využívať potenciál našich žiakov. Oni sami sa niekedy podieľajú návrhmi (ba niekedy i realizáciou) na úprave jednotlivých priestorov školy – najmä vlastných tried, ale i niektorých chodieb. Vždy nám záleží na tom, aby sa naši študenti v škole cítili príjemne.",
+    infoTitle: "",
+    practiceTests: [],
+    succesrate: 89,
+    date: "19.5. - 29.5.",
+    vidUrl: "",
+    students: 620,
+    web: "https://gpm.edupage.org/");
+
+const gta = HighSchool(
+    name: "Gymnáziumsv. Tomáša Akvinského",
+    classTypes: ["8-ročná forma", "4-ročná forma"],
+    studyLength: "4/8",
+    contact: [
+      "Zbrojničná 3, 040 01 Košice",
+      "+421 55 62 227 95",
+      "skola@gta.sk",
+      "PaedDr. Anna Medvecká"
+    ],
+    info:
+        "Gymnázium svätého Tomáša Akvinského (skrátene GTA) je cirkevné katolícke gymnázium v Košiciach spravované kongregáciou sestier dominikánok. Vzniklo v roku 1991 ako štvorročné gymnázium a o päť rokov neskôr, v roku 1996, bolo rozšírené o triedu osemročného gymnázia.",
+    infoTitle: "",
+    practiceTests: [],
+    succesrate: 93,
+    date: "19.5. - 29.5.",
+    vidUrl: "",
+    students: 560,
+    web: "https://www.gta.sk/");
+
+const gymes = HighSchool(
+    name: "Gymnázium sv.Edity Steinovej Košice",
+    classTypes: ["8-ročná forma", "5-ročná bilinguálna forma"],
+    studyLength: "5/8",
+    contact: [
+      "Charkovská 1, 040 22  Košice",
+      "+421 55 799 48 75",
+      "riaditel@gymes.eu",
+      "Mgr. Marek Zlacký"
+    ],
+    info:
+        "Gymnázium sv.Edity Steinovej v Košiciach je gymnáziom, ktoré je zriadené Arcibiskupským úradom v Košiciach. Záujmom školy je, aby sa žiaci vzdelávali pod vedením vysoko kvalifikovaných pedagógov, aby tak absolventi školy boli úspešní vo vysokoškolskom štúdiu a ďalšom osobnom i pracovnom živote. Pedagogický tím Gymnázia sv. Edity Steinovej tvoria predovšetkým mladí učitelia. Ich vek je zárukou motivácie, porozumenia vo vzťahu k študentom i možnosťou vytvorenia jednotného kolektívu. Pri poskytovaní služby vzdelávania sú pre nás najdôležitejšie trvalé kresťanské hodnoty: múdrosť, úcta, radosť. ",
+    infoTitle:
+        "Cieľom našej školy je presadzovať systém „otvorenej rodinnej školy“ pre najbližšiu komunitu a okolie.",
+    practiceTests: [],
+    succesrate: 93,
+    date: "19.5. - 29.5.",
+    vidUrl: "",
+    students: 700,
+    web: "https://gymes.edupage.org/");
