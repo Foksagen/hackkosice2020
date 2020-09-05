@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 const UPJS = Uni(
     name: "Univerzita Pavla Jozefa Šafárika",
     classTypes: [
@@ -34,43 +36,46 @@ const UPJS = Uni(
       "Masmediálne štúdiá": "Filoyofická fakulta",
       "Právo": "Právnická fakulta",
       "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
-    });
+    },
+    picture: 'upjs.jpg');
 
 const TUKE = Uni(
-    name: "Technická Univerzita v Košiciach",
-    classTypes: [
-      "Fakulta baníctva, ekológie, riadenia a geotechnológií",
-      "Fakulta materiálov, metalurgie a recyklácie",
-      "Strojnícka fakulta",
-      "Fakulta elektrotechniky a informatiky",
-      "Stavebná fakulta",
-      "Ekonomická fakulta",
-      "Fakulta výrobných technológií",
-      "Fakulta umení",
-      "Letecká fakulta"
-    ],
-    studyLength: "2-4",
-    contact: [
-      "Letná 9,042 00 Košice",
-      "055/602 2003",
-      "kancelar@tuke.sk",
-      "Ing. Adrián Harčár, PhD.",
-    ],
-    info:
-        "Technická univerzita v Košiciach pokrýva široké spektrum potrieb vzdelávania nielen pre región východného Slovenska, ale v mnohých odboroch je jediným centrom vedy, výskumu a vzdelávania nielen na Slovensku, ale aj v stredoeurópskom priestore. Úzko spolupracuje s inými univerzitami a s priemyselným zázemím regiónu i celého Slovenska.V posledných rokoch sa výrazne zvyšuje záujem o štúdium zo strany zahraničných študentov, čím sa TUKE etabluje v medzinárodnom priestore ako významná vzdelávacia inštitúcia. Na univerzite študujú študenti zo štyridsiatich krajín sveta.",
-    infoTitle: "TUKE dnes",
-    practiceTests: ["", ""],
-    acceptanceRate: 80,
-    date: "19. máj - 18. júl",
-    vidUrl:
-        "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
-    students: 9714,
-    careers: <String, String>{
-      "Informatika": "Fakulta elektrotechniky a informatiky",
-      "Kartografia": "Fakulta BERG",
-      "Matematika": "Fakulta elektrotechniky a informatiky",
-      "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
-    });
+  name: "Technická Univerzita v Košiciach",
+  classTypes: [
+    "Fakulta baníctva, ekológie, riadenia a geotechnológií",
+    "Fakulta materiálov, metalurgie a recyklácie",
+    "Strojnícka fakulta",
+    "Fakulta elektrotechniky a informatiky",
+    "Stavebná fakulta",
+    "Ekonomická fakulta",
+    "Fakulta výrobných technológií",
+    "Fakulta umení",
+    "Letecká fakulta"
+  ],
+  studyLength: "2-4",
+  contact: [
+    "Letná 9,042 00 Košice",
+    "055/602 2003",
+    "kancelar@tuke.sk",
+    "Ing. Adrián Harčár, PhD.",
+  ],
+  info:
+      "Technická univerzita v Košiciach pokrýva široké spektrum potrieb vzdelávania nielen pre región východného Slovenska, ale v mnohých odboroch je jediným centrom vedy, výskumu a vzdelávania nielen na Slovensku, ale aj v stredoeurópskom priestore. Úzko spolupracuje s inými univerzitami a s priemyselným zázemím regiónu i celého Slovenska.V posledných rokoch sa výrazne zvyšuje záujem o štúdium zo strany zahraničných študentov, čím sa TUKE etabluje v medzinárodnom priestore ako významná vzdelávacia inštitúcia. Na univerzite študujú študenti zo štyridsiatich krajín sveta.",
+  infoTitle: "TUKE dnes",
+  practiceTests: ["", ""],
+  acceptanceRate: 80,
+  date: "19. máj - 18. júl",
+  vidUrl:
+      "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
+  students: 9714,
+  careers: <String, String>{
+    "Informatika": "Fakulta elektrotechniky a informatiky",
+    "Kartografia": "Fakulta BERG",
+    "Matematika": "Fakulta elektrotechniky a informatiky",
+    "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
+  },
+  picture: 'tuke.jpg',
+);
 
 class Uni {
   final String name;
@@ -85,6 +90,7 @@ class Uni {
   final String vidUrl;
   final int students;
   final Map<String, String> careers;
+  final String picture;
 
   const Uni(
       {this.name,
@@ -98,5 +104,6 @@ class Uni {
       this.acceptanceRate,
       this.date,
       this.vidUrl,
+      this.picture,
       this.careers});
 }
