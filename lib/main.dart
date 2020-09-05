@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackkosice2020/high_school_page.dart';
+
 import 'package:hackkosice2020/highschool_search_page.dart';
 import 'package:hackkosice2020/highschools.dart';
 import 'package:hackkosice2020/unis.dart';
