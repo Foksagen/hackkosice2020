@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hackkosice2020/high_school_page.dart';
+import 'package:hackkosice2020/highschools.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,10 +42,13 @@ class _HomePageState extends State<HomePage> {
                   horizontal: MediaQuery.of(context).size.width / 7),
               child: Card(
                 elevation: 5.0,
-                child: Container(
-                  height: 100,
-                  child: Center(
-                    child: Text("Stredné školy"),
+                child: InkWell(
+                  onTap: () {},
+                  child: Container(
+                    height: 100,
+                    child: Center(
+                      child: Text("Stredné školy"),
+                    ),
                   ),
                 ),
               ),
@@ -54,10 +59,13 @@ class _HomePageState extends State<HomePage> {
                   horizontal: MediaQuery.of(context).size.width / 7),
               child: Card(
                 elevation: 5.0,
-                child: Container(
-                  height: 100,
-                  child: Center(
-                    child: Text("Vysoké školy"),
+                child: InkWell(
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolPage(school: postova))),
+                  child: Container(
+                    height: 100,
+                    child: Center(
+                      child: Text("Vysoké školy"),
+                    ),
                   ),
                 ),
               ),
