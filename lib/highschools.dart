@@ -114,7 +114,7 @@ const srobarova = HighSchool(
 );
 
 const spse = HighSchool(
-    name: "Gymnázium, Šrobárova 1, Košice",
+    name: "Stredná priemyselná škola elektrotechnická",
     classTypes: [
       "elektrotechnika",
       "technické lýceum",
