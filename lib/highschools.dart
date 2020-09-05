@@ -70,3 +70,27 @@ class HighSchool {
       this.succesrate,
       this.vidUrl});
 }
+
+const srobarova = HighSchool(
+  name: "Gymnázium, Šrobárova 1, Košice",
+  classTypes: ["všeobecná", "anglická", "nemecká", "matematická", "informatická"],
+  studyLength: 4,
+  contact: [
+    "Šrobárova 1, Košice",
+    "055/6226604",
+    "frankovicova@srobarka.sk",
+    "Mgr. PaedDr. Frankovičová Zlatica"
+  ],
+  info:
+      "Výchovu a vzdelávanie na našej škole realizujeme viac ako 128 rokov. Na škole študuje 545 žiakov a pôsobí 40 učiteľov, nemecký lektor a anglický lektor.Hlavným poslaním nášho gymnázia je pripravovať vzdelaných a flexibilných absolventov, ktorí budú úspešní na ktoromkoľvek type vysokej školy, nájdu uplatnenie na domácom i medzinárodnom trhu práce.Zárukou kvalitnej výuky na našej škole sú kvalitní pedagógovia a kvalitné materiálovo-technické vybavenie učební. Vďaka získanému statusu partnerskej školy Prírodovedeckej fakulty v Košiciach (toto partnerstvo sme získali na základe toho, že sme nositeľmi tvorivého prírodovedného vzdelávania, ktoré sa výraznou mierou zaslúži o popularizáciu prírodných vied medzi mladými ľuďmi), úzko spolupracujeme s fakultou.",
+  infoTitle: "Škola s tradíciou",
+  practiceTests: [
+    "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf",
+    "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf"
+  ],
+  succesrate: 44,
+  date: "19.Máj - 18.Júl",
+  vidUrl:
+      "",
+  students: 597,
+);
