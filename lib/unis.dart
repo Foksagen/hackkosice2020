@@ -72,6 +72,52 @@ const TUKE = Uni(
       "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
     });
 
+const Komenskeho = Uni(
+    name: "Univerzita Komenského v Bratislave",
+    classTypes: [
+      "Lekárska fakulta",
+      "Prírodovedecká fakulta",
+      "Právnická fakulta",
+      "Pedagogická fakulta",
+      "Filozofická fakulta",
+      "Farmaceutická fakulta",
+      "Fakulta telesnej výchovy a športu",
+      "Fakulta matematiky, fyziky a informatiky",
+      "Rímskokatolícka cyrilometodská bohoslovecká fakulta",
+      "Evanjelická bohoslovecká fakulta",
+      "Fakulta managementu",
+      "Fakulta sociálnych a ekonomických vied"
+    ],
+    studyLength: "2 - 4",
+    contact: [
+      "Šafárikovo námestie 6, 814 99 Bratislava 1",
+      "02 9010 2011",
+      "infocentrum@uniba.sk",
+      "Mgr. Róbert Zsembera."
+    ],
+    info:
+        "Univerzita Komenského v Bratislave (UK) je moderná európska univerzita. V roku 2019 oslavuje 100. výročie od založenia. Ako jediná slovenská vysoká škola sa pravidelne umiestňuje v celosvetových rebríčkoch najlepších univerzít sveta. Na 13 fakultách poskytuje najširší výber študijných programov (vyše 800) v troch stupňoch, pričom viaceré z nich sú na Slovensku jedinečné. Na výber je zo širokej škály oblastí ľudského poznania – od medicíny cez humanitné a sociálne vedy, prírodné vedy, matematiku až po teológiu. UK je výskumnou inštitúciou, ktorá zastrešuje stovky domácich i zahraničných vedeckovýskumných projektov. Viacerí študenti sú tak už počas štúdia súčasťou významného výskumu a môžu sa aktívne zapojiť do riešenia projektov a grantov či sa zúčastňovať na odborných stážach (aj v zahraničí). UK každoročne vysiela do zahraničia najvyšší počet študentov spomedzi všetkých slovenských vysokých škôl a prijíma aj najviac študentov z celého sveta, napríklad z Nemecka, Nórska, Grécka, Iránu, Rakúska či Islandu.",
+    infoTitle: "O škole",
+    practiceTests: ["", ""],
+    acceptanceRate: 30,
+    date: "6.4 - 13.4",
+    vidUrl:
+        "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
+    students: 513,
+    careers: <String, String>{
+      "Medicína": "Lekárska fakulta",
+      "Zubná medicína": "Lekárska fakulta",
+      "Informatika": "Fakulta matematiky, fyziky a informatiky",
+      "Matematika": "Fakulta matematiky, fyziky a informatiky",
+      "Medzinárodné vzťahy": "Filozofická fakulta",
+      "Pedagogika": "Pedagogická fakulta",
+      "Masmediálne štúdiá": "Filozofická fakulta",
+      "Právo": "Právnická fakulta",
+      "Bioinformatika": "Fakulta matematiky, fyziky a informatiky",
+      "Kartografia": "Prírodovedecká fakulta",
+      "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
+    });
+
 class Uni {
   final String name;
   final List<String> classTypes;
