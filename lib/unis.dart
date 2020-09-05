@@ -38,22 +38,28 @@ const UPJS = Uni(
 
 const TUKE = Uni(
     name: "Technická Univerzita v Košiciach",
-    classTypes: ["Fakulta baníctva, ekológie, riadenia a geotechnológií", "Fakulta materiálov, metalurgie a recyklácie", "Strojnícka fakulta"
-    "Fakulta elektrotechniky a informatiky","Stavebná fakulta", "Ekonomická fakulta", "Fakulta výrobných technológií", "Fakulta umení", "Letecká fakulta"],
+    classTypes: [
+      "Fakulta baníctva, ekológie, riadenia a geotechnológií",
+      "Fakulta materiálov, metalurgie a recyklácie",
+      "Strojnícka fakulta",
+      "Fakulta elektrotechniky a informatiky",
+      "Stavebná fakulta",
+      "Ekonomická fakulta",
+      "Fakulta výrobných technológií",
+      "Fakulta umení",
+      "Letecká fakulta"
+    ],
     studyLength: "2-4",
     contact: [
       "Letná 9,042 00 Košice",
-      "Ing. Adrián Harčár, PhD.",
       "055/602 2003",
       "kancelar@tuke.sk",
+      "Ing. Adrián Harčár, PhD.",
     ],
     info:
         "Technická univerzita v Košiciach pokrýva široké spektrum potrieb vzdelávania nielen pre región východného Slovenska, ale v mnohých odboroch je jediným centrom vedy, výskumu a vzdelávania nielen na Slovensku, ale aj v stredoeurópskom priestore. Úzko spolupracuje s inými univerzitami a s priemyselným zázemím regiónu i celého Slovenska.V posledných rokoch sa výrazne zvyšuje záujem o štúdium zo strany zahraničných študentov, čím sa TUKE etabluje v medzinárodnom priestore ako významná vzdelávacia inštitúcia. Na univerzite študujú študenti zo štyridsiatich krajín sveta.",
     infoTitle: "TUKE dnes",
-    practiceTests: [
-      "",
-      ""
-    ],
+    practiceTests: ["", ""],
     acceptanceRate: 80,
     date: "19. máj - 18. júl",
     vidUrl:

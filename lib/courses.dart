@@ -3,7 +3,7 @@ const careers = <String, List<String>>{
   "Bioinformatika": ["Biológia", "Informatika"],
   "Zubná medicína": ["Biológia", "Chémia", "Fyzika"],
   "Kartografia": ["Geografia", "Matematika", "Informatika"],
-  "Informatika": ["Informatika"],
+  "Informatika": ["Informatika", "Matematika"],
   "Matematika": ["Matematika"],
   "Všeobecná ekológia": ["Biológia", "Chémia", "Geografia"],
   "Medzinárodné vzťahy": [
