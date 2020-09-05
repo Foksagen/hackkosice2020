@@ -1,3 +1,5 @@
+import 'dart:html';
+
 const postova = HighSchool(
   name: "Gymnázium, Poštová 9, Košice",
   classTypes: ["všeobecná", "anglická", "matematická"],
@@ -21,6 +23,7 @@ const postova = HighSchool(
       "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
   students: 513,
   picture: 'gympos.jpg',
+  web: ""https://www.gympos.sk/"
 );
 
 const dopravna = HighSchool(
@@ -47,6 +50,7 @@ const dopravna = HighSchool(
   students: 456,
   picture: 'dopravna.jpg',
   succesrate: 100,
+  web: "https://spsdke.edupage.org/",
 );
 
 class HighSchool {
@@ -62,6 +66,7 @@ class HighSchool {
   final int students;
   final int succesrate;
   final String picture;
+  final String web;
 
   const HighSchool(
       {this.name,
@@ -75,6 +80,7 @@ class HighSchool {
       this.date,
       this.succesrate,
       this.picture,
+      this.web,
       this.vidUrl});
 }
 
@@ -105,4 +111,32 @@ const srobarova = HighSchool(
   date: "19.Máj - 18.Júl",
   vidUrl: "",
   students: 597,
+  web: "https://www.srobarka.sk/",
 );
+
+const spse = HighSchool(
+  name: "Gymnázium, Šrobárova 1, Košice",
+  classTypes: [
+    "elektrotechnika",
+    "technické lýceum",
+    "počitačové systémy",
+    "informačné a sieťové technológie",
+  ],
+  studyLength: 4,
+  contact: [
+    "Komenského 44, Košice",
+    "055/7968151",
+    "spse@spseke.sk",
+    "Ing. Štefan KRIŠTÍN"
+  ],
+  info:
+      "Naša škola umožňuje štvorročné štúdium s maturitou v troch študijných odboroch 2675 M Elektrotechnika, 3918 M Technické lýceum, čo je označenie pre výberové školy podobné našim gymnáziám, ktoré v krajinách západnej Európy úspešne existujú už desiatky rokov a nový študijný odbor 2561M Informačné a sieťové technológie. V rámci štúdia sa prostredníctvom voliteľného predmetu elektrotechnická spôsobilosť žiaci pripravujú na skúšku pre získanie elektrotechnickej spôsobilosti podľa § 21 Vyhl. 508/2009 Z.z.",
+  infoTitle: "",
+  practiceTests: [],
+  succesrate: 78,
+  date: "",
+  vidUrl: "",
+  students: 834,
+  web: "https://www.spseke.sk/"
+);
+
