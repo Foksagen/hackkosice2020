@@ -37,12 +37,14 @@ const dopravna = HighSchool(
     "spsdke@spsdopke.edu.sk",
     "Hospodár, Martin, Ing."
   ],
-  info: "",
-  infoTitle: "",
+  info:
+      "Ponúkame: komplexné štvorročné vzdelanie vo všetkých oblastiach dopravy, pôšt a telekomunikácií; profesionálnu prípravu na technicko-hospodárske, prevádzkové činnosti, vysokokvalifikovaných    špecializovaných odborníkov v štátnom i súkromnom sektore, vrátane prípravy na samostatné  podnikanie - štúdium sa končí maturitnou skúškou; praktickú prípravu žiakov v zahraničí v rámci medzinárodných projektov; absolventi školy sú pripravení aj pre vysokoškolské štúdium najmä na technických VŠ so zameraním na dopravu, elektrotechniku, strojárenstvo, ekonomiku a pod.",
+  infoTitle:
+      "Stredná priemyselná škola dopravná od šk.roku 1967/68 vychováva odborníkov v oblasti dopravy.",
   practiceTests: [""],
-  date: "",
+  date: "15.06. - 23.06.",
   vidUrl: "",
-  students: 0,
+  students: 456,
   picture: 'dopravna.jpg',
   succesrate: 100,
 );
