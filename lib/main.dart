@@ -48,7 +48,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +57,9 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: MediaQuery.of(context).size.width / 7),
+              padding: EdgeInsets.symmetric(
+                  vertical: 4.0,
+                  horizontal: MediaQuery.of(context).size.width / 7),
               child: Card(
                 elevation: 5.0,
                 child: Container(
@@ -70,7 +71,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: MediaQuery.of(context).size.width / 7),
+              padding: EdgeInsets.symmetric(
+                  vertical: 4.0,
+                  horizontal: MediaQuery.of(context).size.width / 7),
               child: Card(
                 elevation: 5.0,
                 child: Container(
