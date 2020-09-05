@@ -30,10 +30,7 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: BackButton(),
-
-      ),
+      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(

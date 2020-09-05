@@ -62,20 +62,20 @@ flutter:
     
     - family: Montserrat
       fonts:
-        -asset: assets/Nunito-Black.ttf
-        -asset: assets/Nunito-BlackItalic.ttf
-        -asset: assets/Nunito-Bold.ttf
-        -asset: assets/Nunito-BoldItalic.ttf
-        -asset: assets/Nunito-ExtraBold.ttf
-        -asset: assets/Nunito-ExtraBoldItalic.ttf
-        -asset: assets/Nunito-ExtraLight.ttf
-        -asset: assets/Nunito-ExtraLightItalic.ttf
-        -asset: assets/Nunito-Italic.ttf
-        -asset: assets/Nunito-Light.ttf
-        -asset: assets/Nunito-LightItalic.ttf
-        -asset: assets/Nunito-Regular.ttf
-        -asset: assets/Nunito-SemiBold.ttf
-        -asset: assets/Nunito-SemiBoldItalic.ttf
+        - asset: assets/Nunito-Black.ttf
+        - asset: assets/Nunito-BlackItalic.ttf
+        - asset: assets/Nunito-Bold.ttf
+        - asset: assets/Nunito-BoldItalic.ttf
+        - asset: assets/Nunito-ExtraBold.ttf
+        - asset: assets/Nunito-ExtraBoldItalic.ttf
+        - asset: assets/Nunito-ExtraLight.ttf
+        - asset: assets/Nunito-ExtraLightItalic.ttf
+        - asset: assets/Nunito-Italic.ttf
+        - asset: assets/Nunito-Light.ttf
+        - asset: assets/Nunito-LightItalic.ttf
+        - asset: assets/Nunito-Regular.ttf
+        - asset: assets/Nunito-SemiBold.ttf
+        - asset: assets/Nunito-SemiBoldItalic.ttf
 
 
 

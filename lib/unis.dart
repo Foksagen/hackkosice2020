@@ -53,7 +53,7 @@ const TUKE = Uni(
       "https://www.gympos.sk/files/vyskusajte-sa/test_PS_2014.htm",
       "https://www.gympos.sk/files/vyskusajte-sa/test_PS_SJL.htm"
     ],
-    succesrate: 56,
+    acceptanceRate: 80,
     date: "19. máj - 18. júl",
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
@@ -78,7 +78,6 @@ class Uni {
   final String vidUrl;
   final int students;
   final Map<String, String> careers;
-  final int succesrate;
 
   const Uni(
       {this.name,
@@ -92,6 +91,5 @@ class Uni {
       this.acceptanceRate,
       this.date,
       this.vidUrl,
-      this.succesrate,
       this.careers});
 }
