@@ -41,24 +41,24 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
-        - asset: assets/Montserrat-Black.tff
-        - asset: assets/Montserrat-BlackItalic.tff
-        - asset: assets/Montserrat-Bold.tff
-        - asset: assets/Montserrat-BoldItalic.tff
-        - asset: assets/Montserrat-ExtraBold.tff
-        - asset: assets/Montserrat-ExtraBoldItalic.tff
-        - asset: assets/Montserrat-ExtraLight.tff
-        - asset: assets/Montserrat-ExtraLightItalic.tff
-        - asset: assets/Montserrat-Italic.tff
-        - asset: assets/Montserrat-Light.tff
-        - asset: assets/Montserrat-LightItalic.tff
-        - asset: assets/Montserrat-Medium.tff
-        - asset: assets/Montserrat-MediumItalic.tff
-        - asset: assets/Montserrat-Regular.tff
-        - asset: assets/Montserrat-SemiBold.tff
-        - asset: assets/Montserrat-SemiBoldItalic.tff
-        - asset: assets/Montserrat-Thin.tff
-        - asset: assets/Montserrat-ThinItalic.tff
+        - asset: assets/Montserrat-Black.ttf
+        - asset: assets/Montserrat-BlackItalic.ttf
+        - asset: assets/Montserrat-Bold.ttf
+        - asset: assets/Montserrat-BoldItalic.ttf
+        - asset: assets/Montserrat-ExtraBold.ttf
+        - asset: assets/Montserrat-ExtraBoldItalic.ttf
+        - asset: assets/Montserrat-ExtraLight.ttf
+        - asset: assets/Montserrat-ExtraLightItalic.ttf
+        - asset: assets/Montserrat-Italic.ttf
+        - asset: assets/Montserrat-Light.ttf
+        - asset: assets/Montserrat-LightItalic.ttf
+        - asset: assets/Montserrat-Medium.ttf
+        - asset: assets/Montserrat-MediumItalic.ttf
+        - asset: assets/Montserrat-Regular.ttf
+        - asset: assets/Montserrat-SemiBold.ttf
+        - asset: assets/Montserrat-SemiBoldItalic.ttf
+        - asset: assets/Montserrat-Thin.ttf
+        - asset: assets/Montserrat-ThinItalic.ttf
     
     - family: Montserrat
       fonts:

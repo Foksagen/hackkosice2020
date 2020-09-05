@@ -15,6 +15,7 @@ const postova = HighSchool(
     "https://www.gympos.sk/files/vyskusajte-sa/test_PS_2014.htm",
     "https://www.gympos.sk/files/vyskusajte-sa/test_PS_SJL.htm"
   ],
+  succesrate: 53,
   date: "19.Máj - 18.Júl",
   vidUrl:
       "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hackkosice2020/high_school_page.dart';
 import 'package:hackkosice2020/highschools.dart';
 import 'package:hackkosice2020/unis.dart';
+
 import 'package:hackkosice2020/university_page.dart';
 
 void main() {
@@ -62,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               child: Card(
                 elevation: 5.0,
                 child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => UniversityPage(school: UPJS))),
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => UniversityPage(school: TUKE))),
                   child: Container(
                     height: 100,
                     child: Center(
