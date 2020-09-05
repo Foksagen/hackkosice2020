@@ -10,6 +10,6 @@ class UniversityPage extends StatefulWidget {
 class UniversityPageState extends State<UniversityPage> {
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return Container();
   }
 }

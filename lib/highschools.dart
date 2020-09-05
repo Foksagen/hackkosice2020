@@ -22,24 +22,6 @@ const postova = HighSchool(
   students: 513,
 );
 
-const courses = <String, List<String>>{
-  "Lekárska fakulta": ["Biológia", "Chémia", "Fyzika"],
-  "Biológia": ["Biológia"],
-  "Chémia": ["Chémia"],
-  "Fyzika": ["Fyzika"],
-  "Geografia": ["Geografia"],
-  "Informatika": ["Informatika"],
-  "Matematika": ["Matematika"],
-  "Všeobecná ekológia": ["Biológia", "Chémia", "Geografia"],
-  "Fakulta verejnej správy": [
-    "Občianska náuka",
-    "Slovenský jazyk a literatúra"
-  ],
-  "Filozofia": ["Občianska náuka", "Dejepis"],
-  "Právnická fakulta": ["Občianska náuka", "Dejepis"],
-  "Sekuritné vedy": ["Informatika"],
-};
-
 class HighSchool {
   final String name;
   final List<String> classTypes;
