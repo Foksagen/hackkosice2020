@@ -15,11 +15,32 @@ const postova = HighSchool(
     "https://www.gympos.sk/files/vyskusajte-sa/test_PS_2014.htm",
     "https://www.gympos.sk/files/vyskusajte-sa/test_PS_SJL.htm"
   ],
-  succesrate: 56.3,
   date: "19.Máj - 18.Júl",
   vidUrl:
       "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
   students: 513,
+);
+
+const dopravna = HighSchool(
+  name: "Stredná priemyselná škola dopravná",
+  classTypes: [
+    "elektrotechnika v doprave a telekomunikáciách",
+    "prevádzka a ekonomika dopravy",
+    "technika a prevádzka dopravy, dopravná akadémia"
+  ],
+  studyLength: 2,
+  contact: [
+    "Hlavná 113, 040 01 Košice",
+    "+42155/727 70 11",
+    "spsdke@spsdopke.edu.sk",
+    "Hospodár, Martin, Ing."
+  ],
+  info: "",
+  infoTitle: "",
+  practiceTests: [""],
+  date: "",
+  vidUrl: "",
+  students: 0,
 );
 
 class HighSchool {
@@ -30,7 +51,6 @@ class HighSchool {
   final String info;
   final String infoTitle;
   final List<String> practiceTests;
-  final double succesrate;
   final String date;
   final String vidUrl;
   final int students;
@@ -44,7 +64,6 @@ class HighSchool {
       this.contact,
       this.info,
       this.practiceTests,
-      this.succesrate,
       this.date,
       this.vidUrl});
 }

@@ -38,6 +38,50 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/Montserrat-Black.tff
+        - asset: assets/Montserrat-BlackItalic.tff
+        - asset: assets/Montserrat-Bold.tff
+        - asset: assets/Montserrat-BoldItalic.tff
+        - asset: assets/Montserrat-ExtraBold.tff
+        - asset: assets/Montserrat-ExtraBoldItalic.tff
+        - asset: assets/Montserrat-ExtraLight.tff
+        - asset: assets/Montserrat-ExtraLightItalic.tff
+        - asset: assets/Montserrat-Italic.tff
+        - asset: assets/Montserrat-Light.tff
+        - asset: assets/Montserrat-LightItalic.tff
+        - asset: assets/Montserrat-Medium.tff
+        - asset: assets/Montserrat-MediumItalic.tff
+        - asset: assets/Montserrat-Regular.tff
+        - asset: assets/Montserrat-SemiBold.tff
+        - asset: assets/Montserrat-SemiBoldItalic.tff
+        - asset: assets/Montserrat-Thin.tff
+        - asset: assets/Montserrat-ThinItalic.tff
+    
+    - family: Montserrat
+      fonts:
+        -asset: assets/Nunito-Black.ttf
+        -asset: assets/Nunito-BlackItalic.ttf
+        -asset: assets/Nunito-Bold.ttf
+        -asset: assets/Nunito-BoldItalic.ttf
+        -asset: assets/Nunito-ExtraBold.ttf
+        -asset: assets/Nunito-ExtraBoldItalic.ttf
+        -asset: assets/Nunito-ExtraLight.ttf
+        -asset: assets/Nunito-ExtraLightItalic.ttf
+        -asset: assets/Nunito-Italic.ttf
+        -asset: assets/Nunito-Light.ttf
+        -asset: assets/Nunito-LightItalic.ttf
+        -asset: assets/Nunito-Regular.ttf
+        -asset: assets/Nunito-SemiBold.ttf
+        -asset: assets/Nunito-SemiBoldItalic.ttf
+
+
+
+
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
