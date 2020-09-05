@@ -108,7 +108,7 @@ const Komenskeho = Uni(
     date: "6.4 - 13.4",
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
-    students: 513,
+    students: 30000,
     careers: <String, String>{
       "Medicína": "Lekárska fakulta",
       "Zubná medicína": "Lekárska fakulta",
@@ -121,6 +121,43 @@ const Komenskeho = Uni(
       "Bioinformatika": "Fakulta matematiky, fyziky a informatiky",
       "Kartografia": "Prírodovedecká fakulta",
       "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
+    });
+  
+  const MatejaBela = Uni(
+    name: "Univerzita Mateja Bela v Bystrici",
+    classTypes: [
+      "Právnická fakulta",
+      "Pedagogická fakulta",
+      "Filozofická fakulta",
+      "Fakulta prírodných vied",
+      "Fakulta politických vied a medzinárodných vzťahov",
+      "Ekonomická fakulta"
+    ],
+    studyLength: "2 - 4",
+    contact: [
+      "Národná 12, 974 01 Banska Bystrica",
+      "048/446 1151",
+      "vladimir.hiadlovsky@umb.sk",
+      "doc. Ing. Vladimír Hiadlovský, PhD."
+    ],
+    info:
+        "Univerzita Mateja Bela v Banskej Bystrici je verejnou vysokou školou a v roku 2010 obhájila status univerzity. Je členom Európskej asociácie univerzít. Poskytuje kvalitné vysokoškolské vzdelávanie a ďalšie vzdelávanie podľa rozvoja vedy a potrieb praxe a rozvíja nové poznanie tvorivým vedeckým a umeleckým bádaním. Ponúka klasické univerzitné spektrum možností vzdelávania vo všetkých troch stupňoch a formách štúdia v oblasti pedagogických, sociálnych, ekonomických, právnych, politických, humanitných a prírodných vied, v odboroch medzinárodné vzťahy, v ekonomických odboroch a v matematike realizuje aj anglofónne a čiastočne frankofónne štúdium. UMB rozvíja spoločné študijné programy a kontakty s významnými zahraničnými univerzitami, kde študenti majú možnosť absolvovať časť svojho štúdia. Aj preto absolventi UMB nachádzajú dobré uplatnenie nielen doma, ale i v zahraničí. Okrem pedagogickej, vedeckej a umeleckej činnosti predstavuje významnú časť tvorivej činnosti UMB základný a aplikovaný výskum v kooperácii s domácimi a zahraničnými inštitúciami. Univerzita má centrá excelentného výskumu, rieši vedecké i rozvojové projekty z európskych štrukturálnych fondov. Realizuje celoživotné vzdelávanie v rôznych kurzoch a formách od Detskej univerzity UMB až po Univerzitu tretieho veku UMB. Vo voľnom čase vytvára študentom priestor na rôzne spoločenské aktivity, ktoré im umožňujú športové kluby, umelecké súbory a študentské organizácie pôsobiace na UMB.",
+    infoTitle: "O škole",
+    practiceTests: ["", ""],
+    acceptanceRate: 47,
+    date: "6.4 - 13.4",
+    vidUrl:
+        "",
+    students: 6300,
+    careers: <String, String>{
+      "Informatika": "Fakulta prírodných vied",
+      "Matematika": "Fakulta prírodných vied",
+      "Medzinárodné vzťahy": "Fakulta politických vied a medzinárodných vzťahov",
+      "Pedagogika": "Pedagogická fakulta",
+      "Právo": "Právnická fakulta",
+      "Kartografia": "Fakulta prírodných vied",
+      "Genetika a molekulárna biológia": "Fakulta prírodných vied",
+      "Všeobecná ekológia": "Fakulta prírodných vied",
     });
 
 class Uni {
