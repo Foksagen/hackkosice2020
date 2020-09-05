@@ -7,7 +7,7 @@ const UPJS = Uni(
       "Verejnej správy",
       "Filozofická fakulta"
     ],
-    studyLength: 2 - 4,
+    studyLength: "2 - 4",
     contact: [
       "Šrobárová 2, 04180 Košice",
       "055/2341100",
@@ -39,12 +39,12 @@ const UPJS = Uni(
 const TUKE = Uni(
     name: "Gymnázium, Poštová 9, Košice",
     classTypes: ["všeobecná", "anglická", "matematická"],
-    studyLength: 4,
+    studyLength: "4",
     contact: [
       "Poštová 9, Košice",
+      "Mgr. Otto Révész",
       "055/6226604",
       "revesz@gympos.sk",
-      "Mgr. Otto Révész"
     ],
     info:
         "Naše gymnázium v historickej budove v centre Košíc už takmer päťdesiat rokov plní svoje poslanie: kvalitne pripraviť žiakov na vysokoškolské štúdium. Sme hrdí na to, že nás vyhľadávajú ďalšie generácie našich absolventov, ktorým, rovnako ako pred rokmi ich rodičom, učarovala škola tradičná a progresívna zároveň. ",
@@ -53,8 +53,8 @@ const TUKE = Uni(
       "https://www.gympos.sk/files/vyskusajte-sa/test_PS_2014.htm",
       "https://www.gympos.sk/files/vyskusajte-sa/test_PS_SJL.htm"
     ],
-    acceptanceRate: 80,
-    date: "19.Máj - 18.Júl",
+    succesrate: 56,
+    date: "19. máj - 18. júl",
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
     students: 513,
@@ -68,7 +68,7 @@ const TUKE = Uni(
 class Uni {
   final String name;
   final List<String> classTypes;
-  final int studyLength;
+  final String studyLength;
   final List<String> contact;
   final String info;
   final String infoTitle;
@@ -78,6 +78,7 @@ class Uni {
   final String vidUrl;
   final int students;
   final Map<String, String> careers;
+  final int succesrate;
 
   const Uni(
       {this.name,
@@ -91,5 +92,6 @@ class Uni {
       this.acceptanceRate,
       this.date,
       this.vidUrl,
+      this.succesrate,
       this.careers});
 }
