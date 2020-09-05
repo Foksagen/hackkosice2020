@@ -54,6 +54,7 @@ class HighSchool {
   final String date;
   final String vidUrl;
   final int students;
+  final int succesrate;
 
   const HighSchool(
       {this.name,
@@ -65,5 +66,6 @@ class HighSchool {
       this.info,
       this.practiceTests,
       this.date,
+      this.succesrate,
       this.vidUrl});
 }

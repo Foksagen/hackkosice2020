@@ -79,7 +79,6 @@ class Uni {
   final String vidUrl;
   final int students;
   final Map<String, String> careers;
-  final int succesrate;
 
   const Uni(
       {this.name,
@@ -93,6 +92,5 @@ class Uni {
       this.acceptanceRate,
       this.date,
       this.vidUrl,
-      this.succesrate,
       this.careers});
 }
