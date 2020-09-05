@@ -44,6 +44,7 @@ const dopravna = HighSchool(
   vidUrl: "",
   students: 0,
   picture: 'dopravna.jpg',
+  succesrate: 100,
 );
 
 class HighSchool {
@@ -77,7 +78,13 @@ class HighSchool {
 
 const srobarova = HighSchool(
   name: "Gymnázium, Šrobárova 1, Košice",
-  classTypes: ["všeobecná", "anglická", "nemecká", "matematická", "informatická"],
+  classTypes: [
+    "všeobecná",
+    "anglická",
+    "nemecká",
+    "matematická",
+    "informatická"
+  ],
   studyLength: 4,
   contact: [
     "Šrobárova 1, Košice",
@@ -94,7 +101,6 @@ const srobarova = HighSchool(
   ],
   succesrate: 44,
   date: "19.Máj - 18.Júl",
-  vidUrl:
-      "",
+  vidUrl: "",
   students: 597,
 );

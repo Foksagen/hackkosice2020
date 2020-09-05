@@ -5,6 +5,7 @@ import 'package:hackkosice2020/highschools.dart';
 import 'package:hackkosice2020/unis.dart';
 
 import 'package:hackkosice2020/university_page.dart';
+import 'package:hackkosice2020/university_search_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -47,7 +48,8 @@ class _HomePageState extends State<HomePage> {
               child: Card(
                 elevation: 5.0,
                 child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolsSearchPage())),
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => HighSchoolsSearchPage())),
                   child: Container(
                     height: 100,
                     child: Center(
@@ -64,7 +66,8 @@ class _HomePageState extends State<HomePage> {
               child: Card(
                 elevation: 5.0,
                 child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => UniversityPage(school: TUKE))),
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => UniversitySearchPage())),
                   child: Container(
                     height: 100,
                     child: Center(

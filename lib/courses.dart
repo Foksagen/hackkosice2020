@@ -33,3 +33,19 @@ const careers = <String, List<String>>{
   "Právo": ["Občianska náuka", "Dejepis"],
   "Molekulárna biológia": ["Biológia", "Chémia"],
 };
+
+const subjects = <String>{
+  "Biológia",
+  "Chémia",
+  "Fyzika",
+  "Informatika",
+  "Geografia",
+  "Občianska náuka",
+  "Dejepis",
+  "Slovenský jazyk a literatúra",
+  "Nemecký jazyk",
+  "Anglický jazyk",
+  "Ruský jazyk",
+  "Francúzsky jazyk",
+  "Umenie a kultúra",
+};
