@@ -37,27 +37,28 @@ const UPJS = Uni(
     });
 
 const TUKE = Uni(
-    name: "Gymnázium, Poštová 9, Košice",
-    classTypes: ["všeobecná", "anglická", "matematická"],
-    studyLength: "4",
+    name: "Technická Univerzita v Košiciach",
+    classTypes: ["Fakulta baníctva, ekológie, riadenia a geotechnológií", "Fakulta materiálov, metalurgie a recyklácie", "Strojnícka fakulta"
+    "Fakulta elektrotechniky a informatiky","Stavebná fakulta", "Ekonomická fakulta", "Fakulta výrobných technológií", "Fakulta umení", "Letecká fakulta"],
+    studyLength: "2-4",
     contact: [
-      "Poštová 9, Košice",
-      "Mgr. Otto Révész",
-      "055/6226604",
-      "revesz@gympos.sk",
+      "Letná 9,042 00 Košice",
+      "Ing. Adrián Harčár, PhD.",
+      "055/602 2003",
+      "kancelar@tuke.sk",
     ],
     info:
-        "Naše gymnázium v historickej budove v centre Košíc už takmer päťdesiat rokov plní svoje poslanie: kvalitne pripraviť žiakov na vysokoškolské štúdium. Sme hrdí na to, že nás vyhľadávajú ďalšie generácie našich absolventov, ktorým, rovnako ako pred rokmi ich rodičom, učarovala škola tradičná a progresívna zároveň. ",
-    infoTitle: "Škola s tradíciou",
+        "Technická univerzita v Košiciach pokrýva široké spektrum potrieb vzdelávania nielen pre región východného Slovenska, ale v mnohých odboroch je jediným centrom vedy, výskumu a vzdelávania nielen na Slovensku, ale aj v stredoeurópskom priestore. Úzko spolupracuje s inými univerzitami a s priemyselným zázemím regiónu i celého Slovenska.V posledných rokoch sa výrazne zvyšuje záujem o štúdium zo strany zahraničných študentov, čím sa TUKE etabluje v medzinárodnom priestore ako významná vzdelávacia inštitúcia. Na univerzite študujú študenti zo štyridsiatich krajín sveta.",
+    infoTitle: "TUKE dnes",
     practiceTests: [
-      "https://www.gympos.sk/files/vyskusajte-sa/test_PS_2014.htm",
-      "https://www.gympos.sk/files/vyskusajte-sa/test_PS_SJL.htm"
+      "",
+      ""
     ],
-    succesrate: 56,
+    acceptanceRate: 80,
     date: "19. máj - 18. júl",
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
-    students: 513,
+    students: 9714,
     careers: <String, String>{
       "Informatika": "Fakulta elektrotechniky a informatiky",
       "Kartografia": "Fakulta BERG",
