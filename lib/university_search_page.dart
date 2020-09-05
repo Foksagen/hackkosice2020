@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'high_school_page.dart';
-import 'highschools.dart';
+import 'careers_search_page.dart';
+import 'university_page.dart';
+import 'unis.dart';
 
-class HighSchoolsSearchPage extends StatefulWidget {
+class UniversitySearchPage extends StatefulWidget {
   @override
-  HighSchoolsSearchPageState createState() => HighSchoolsSearchPageState();
+  UniversitySearchPageState createState() => UniversitySearchPageState();
 }
 
-class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
+class UniversitySearchPageState extends State<UniversitySearchPage> {
   final TextEditingController _controller = TextEditingController();
   List<Widget> _schools;
 
@@ -28,14 +29,17 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
   void _updateResults() {
     this._schools = null;
     final results = <Widget>[];
-    for (final school in [postova, dopravna, srobarova]) {
-      if (school.name.toLowerCase().contains(this._controller.text.toLowerCase())) {
+    for (final school in [UPJS, TUKE]) {
+      if (school.name
+          .toLowerCase()
+          .contains(this._controller.text.toLowerCase())) {
         results.add(Padding(
           padding: const EdgeInsets.symmetric(vertical: 2.5, horizontal: 10.0),
           child: Card(
             elevation: 5.0,
             child: InkWell(
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolPage(school: school))),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => UniversityPage(school: school))),
               child: Container(
                 height: 100,
                 child: Center(
@@ -90,6 +94,13 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
                 )
               : CircularProgressIndicator(),
         ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () => Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => CareersSearchPage())),
+        label: Text("Profesie"),
+        icon: Icon(Icons.work),
+        //backgroundColor: Colors.green,
       ),
     );
   }
