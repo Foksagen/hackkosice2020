@@ -20,6 +20,7 @@ const postova = HighSchool(
   vidUrl:
       "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
   students: 513,
+  picture: 'gympos.jpg',
 );
 
 const dopravna = HighSchool(
@@ -42,6 +43,7 @@ const dopravna = HighSchool(
   date: "",
   vidUrl: "",
   students: 0,
+  picture: 'dopravna.jpg',
 );
 
 class HighSchool {
@@ -56,6 +58,7 @@ class HighSchool {
   final String vidUrl;
   final int students;
   final int succesrate;
+  final String picture;
 
   const HighSchool(
       {this.name,
@@ -68,6 +71,7 @@ class HighSchool {
       this.practiceTests,
       this.date,
       this.succesrate,
+      this.picture,
       this.vidUrl});
 }
 
