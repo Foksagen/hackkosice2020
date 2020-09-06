@@ -283,6 +283,10 @@ class HighSchoolPageState extends State<HighSchoolPage>
                       InkWell(
                         child: new Text("Test MAT"),
                         onTap: () => launch(widget.school.practiceTests[0]),
+                      ),
+                      InkWell(
+                        child: new Text("Test SJL"),
+                        onTap: () => launch(widget.school.practiceTests[1]),
                       )
                     ])),
               ],
