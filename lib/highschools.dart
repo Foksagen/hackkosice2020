@@ -1,9 +1,15 @@
 import 'dart:html';
 
+enum HighSchoolTypes{
+  gymnazium,
+  odborna_skola,
+}
+
 class HighSchool {
   final String name;
   final List<String> classTypes;
   final String studyLength;
+  final HighSchoolTypes type;
   final List<String> contact;
   final String info;
   final String infoTitle;
@@ -14,12 +20,15 @@ class HighSchool {
   final int succesrate;
   final String picture;
   final String web;
+  final List<String> events;
+  final List<String> clubs;
 
   const HighSchool(
       {this.name,
       this.students,
       this.infoTitle,
       this.classTypes,
+      this.type,
       this.studyLength,
       this.contact,
       this.info,
@@ -28,12 +37,15 @@ class HighSchool {
       this.succesrate,
       this.picture,
       this.web,
+      this.events,
+      this.clubs,
       this.vidUrl});
 }
 
 const postova = HighSchool(
     name: "Gymnázium, Poštová 9, Košice",
     classTypes: ["všeobecná", "anglická", "matematická"],
+    type: HighSchoolTypes.gymnazium,
     studyLength: "4",
     contact: [
       "Poštová 9, Košice",
@@ -54,7 +66,9 @@ const postova = HighSchool(
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
     students: 513,
     picture: 'gympos.jpg',
-    web: "https://www.gympos.sk/");
+    web: "https://www.gympos.sk/",
+    clubs: ["Školská kapela","Školský časopis Homo Studiosus","Štafetový tím","Volejbalový tím","Študenstská rada","Debatný klub","Filozofický klub","Literárny klub"],
+    events: ["Imatrikulácia","Ples Poštovákov","Majáles","Študentský deň"]);
 
 const dopravna = HighSchool(
   name: "Stredná priemyselná škola dopravná",
@@ -63,6 +77,7 @@ const dopravna = HighSchool(
     "prevádzka a ekonomika dopravy",
     "technika a prevádzka dopravy, dopravná akadémia"
   ],
+  type: HighSchoolTypes.odborna_skola,
   studyLength: "4",
   contact: [
     "Hlavná 113, 040 01 Košice",
@@ -81,6 +96,8 @@ const dopravna = HighSchool(
   picture: 'dopravna.jpg',
   succesrate: 100,
   web: "https://spsdke.edupage.org/",
+  clubs: [""],
+  events: [""]
 );
 
 const srobarova = HighSchool(
@@ -92,6 +109,7 @@ const srobarova = HighSchool(
     "matematická",
     "informatická"
   ],
+  type: HighSchoolTypes.gymnazium,
   studyLength: "4",
   contact: [
     "Šrobárova 1, Košice",
@@ -111,6 +129,8 @@ const srobarova = HighSchool(
   vidUrl: "",
   students: 597,
   web: "https://www.srobarka.sk/",
+  clubs: [""],
+  events: [""]
 );
 
 const spse = HighSchool(
@@ -121,6 +141,7 @@ const spse = HighSchool(
       "počitačové systémy",
       "informačné a sieťové technológie",
     ],
+    type: HighSchoolTypes.odborna_skola,
     studyLength: "4",
     contact: [
       "Komenského 44, Košice",
@@ -136,7 +157,9 @@ const spse = HighSchool(
     date: "",
     vidUrl: "",
     students: 834,
-    web: "https://www.spseke.sk/");
+    web: "https://www.spseke.sk/",
+    clubs: [""],
+    events: [""]);
 
 const gpm = HighSchool(
     name: "Gymnázium, Park mládeže 5, Košice",
@@ -146,6 +169,7 @@ const gpm = HighSchool(
       "Klasické štúdium",
       "Štúdium s rozšíreným vyučovaním anglického jazyka",
     ],
+    type: HighSchoolTypes.gymnazium,
     studyLength: "4-5",
     contact: [
       "Park mládeže 5, 040 01 Košice",
@@ -161,11 +185,14 @@ const gpm = HighSchool(
     date: "19.5. - 29.5.",
     vidUrl: "",
     students: 620,
-    web: "https://gpm.edupage.org/");
+    web: "https://gpm.edupage.org/",
+    clubs: [""],
+    events: [""]);
 
 const gta = HighSchool(
     name: "Gymnáziumsv. Tomáša Akvinského",
     classTypes: ["8-ročná forma", "4-ročná forma"],
+    type: HighSchoolTypes.gymnazium,
     studyLength: "4/8",
     contact: [
       "Zbrojničná 3, 040 01 Košice",
@@ -181,7 +208,9 @@ const gta = HighSchool(
     date: "19.5. - 29.5.",
     vidUrl: "",
     students: 560,
-    web: "https://www.gta.sk/");
+    web: "https://www.gta.sk/",
+    clubs: [""],
+    events: [""]);
 
 const gymes = HighSchool(
     name: "Gymnázium sv.Edity Steinovej Košice",
@@ -202,4 +231,6 @@ const gymes = HighSchool(
     date: "19.5. - 29.5.",
     vidUrl: "",
     students: 700,
-    web: "https://gymes.edupage.org/");
+    web: "https://gymes.edupage.org/",
+    clubs: [""],
+    events: [""]);
