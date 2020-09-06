@@ -69,7 +69,6 @@ class UniversitySearchPageState extends State<UniversitySearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(236, 193, 156, 1.0),
       appBar: AppBar(),
       body: Column(
         children: <Widget>[

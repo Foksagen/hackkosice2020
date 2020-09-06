@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
           accentColor: Color.fromRGBO(30, 132, 127, 1.0),
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
-          scaffoldBackgroundColor: Color.fromARGB(
-              255, 236, 193, 156) //fromRGBO(236, 193, 156, 0.01),
-          ),
+          scaffoldBackgroundColor: Color.fromARGB(255, 255, 244, 233)),
       home: HomePage(),
     );
   }
