@@ -2,14 +2,14 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-final headerStyle = TextStyle(fontSize: 25, fontWeight: FontWeight.w600, fontFamily: "Nunito");
+final headerStyle = TextStyle(fontSize: 20, fontWeight: FontWeight.w600, fontFamily: "Nunito");
 
 final descStyle = TextStyle(
   fontFamily: "Montserrat",
   color: Colors.grey,
 );
 
-Widget createCard(String title, String desc, String imgUrl, GestureTapCallback onTap, {bool biggerImage = false, List<String> chipsData}) {
+Widget createCard(String title, Widget desc, String imgUrl, GestureTapCallback onTap, {bool biggerImage = false, List<String> chipsData}) {
   return Card(
     elevation: 3.0,
     child: InkWell(
@@ -23,7 +23,7 @@ Widget createCard(String title, String desc, String imgUrl, GestureTapCallback o
               height: biggerImage ? 120 : 100,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(4.0), topRight: Radius.circular(4.0)),
-                  image: DecorationImage(fit: BoxFit.fitWidth, alignment: FractionalOffset.bottomCenter, image: NetworkImage(imgUrl))),
+                  image: DecorationImage(fit: BoxFit.fitWidth, alignment: FractionalOffset.center, image: NetworkImage(imgUrl))),
             ),
             Expanded(
               child: ListTile(
@@ -32,11 +32,7 @@ Widget createCard(String title, String desc, String imgUrl, GestureTapCallback o
                   title,
                   style: headerStyle,
                 ),
-                subtitle: Text(
-                  desc,
-                  textAlign: TextAlign.start,
-                  style: descStyle,
-                ),
+                subtitle: desc,
               ),
             ),
             Align(

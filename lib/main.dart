@@ -60,7 +60,11 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(left: MediaQuery.of(context).size.width / 7, top: 50.0, right: MediaQuery.of(context).size.width / 7, bottom: 4.0),
                 child: createCard(
                   "Stredné školy",
-                  "Lorem ipsum",
+                  Text(
+                    "Lorem ipsum",
+                    textAlign: TextAlign.start,
+                    style: descStyle,
+                  ),
                   "https://r-cf.bstatic.com/images/hotel/max1024x768/116/116281457.jpg",
                       () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolsSearchPage())),
                   biggerImage: true,
@@ -70,7 +74,11 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: MediaQuery.of(context).size.width / 7),
                 child: createCard(
                   "Vysoké školy",
-                  "Lorem ipsum",
+                  Text(
+                    "Lorem ipsum",
+                    textAlign: TextAlign.start,
+                    style: descStyle,
+                  ),
                   "https://r-cf.bstatic.com/images/hotel/max1024x768/116/116281457.jpg",
                       () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => UniversitySearchPage())),
                   biggerImage: true,

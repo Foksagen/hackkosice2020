@@ -139,7 +139,7 @@ class HighSchoolPageState extends State<HighSchoolPage>
                   topLeft: Radius.circular(4.0),
                   topRight: Radius.circular(4.0)),
               image: DecorationImage(
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.cover,
                 alignment: FractionalOffset.bottomCenter,
                 image: NetworkImage(widget.school.picture),
               ),
@@ -163,10 +163,13 @@ class HighSchoolPageState extends State<HighSchoolPage>
                   Icons.location_on,
                   size: 14,
                 ),
-                Text(
-                  widget.school.contact[0],
-                  style: const TextStyle(
-                    fontSize: 14,
+                Padding(
+                  padding: const EdgeInsets.only(left: 4.0),
+                  child: Text(
+                    widget.school.contact[0],
+                    style: const TextStyle(
+                      fontSize: 14,
+                    ),
                   ),
                 ),
               ],
