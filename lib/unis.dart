@@ -122,8 +122,8 @@ const Komenskeho = Uni(
       "Kartografia": "Prírodovedecká fakulta",
       "Genetika a molekulárna biológia": "Prírodovedecká fakulta",
     });
-  
-  const MatejaBela = Uni(
+
+const MatejaBela = Uni(
     name: "Univerzita Mateja Bela v Bystrici",
     classTypes: [
       "Právnická fakulta",
@@ -146,13 +146,13 @@ const Komenskeho = Uni(
     practiceTests: ["", ""],
     acceptanceRate: 47,
     date: "6.4 - 13.4",
-    vidUrl:
-        "",
+    vidUrl: "",
     students: 6300,
     careers: <String, String>{
       "Informatika": "Fakulta prírodných vied",
       "Matematika": "Fakulta prírodných vied",
-      "Medzinárodné vzťahy": "Fakulta politických vied a medzinárodných vzťahov",
+      "Medzinárodné vzťahy":
+          "Fakulta politických vied a medzinárodných vzťahov",
       "Pedagogika": "Pedagogická fakulta",
       "Právo": "Právnická fakulta",
       "Kartografia": "Fakulta prírodných vied",
