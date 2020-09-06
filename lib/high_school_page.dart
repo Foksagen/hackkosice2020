@@ -11,7 +11,8 @@ class HighSchoolPage extends StatefulWidget {
   HighSchoolPageState createState() => HighSchoolPageState();
 }
 
-class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderStateMixin {
+class HighSchoolPageState extends State<HighSchoolPage>
+    with TickerProviderStateMixin {
   TabController _tabController;
   int _tabIndex = 0;
 
@@ -132,9 +133,11 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
               ),
             ),*/
           Container(
-            height: 150,
+            height: 300,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(4.0), topRight: Radius.circular(4.0)),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(4.0),
+                  topRight: Radius.circular(4.0)),
               image: DecorationImage(
                 fit: BoxFit.fitWidth,
                 alignment: FractionalOffset.bottomCenter,
@@ -152,7 +155,8 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
             child: Row(
               children: <Widget>[
                 Icon(
@@ -172,14 +176,16 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 20.0, top: 10.0, right: 2.5, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    left: 20.0, top: 10.0, right: 2.5, bottom: 10.0),
                 child: Icon(
                   Icons.people,
                   size: 35,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 2.5, top: 10.0, right: 20.0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    left: 2.5, top: 10.0, right: 20.0, bottom: 10.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -234,69 +240,70 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
             ),
           ),
         ]..add([
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  "Informácie",
-                  style: const TextStyle(
-                    fontSize: 25.0,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "Informácie",
+                    style: const TextStyle(
+                      fontSize: 25.0,
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-                child: Text(
-                  widget.school.info,
-                ),
-              ),
-            ],
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  "Prijímacie skúšky",
-                  style: const TextStyle(
-                    fontSize: 25.0,
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 10.0, right: 10.0, bottom: 10.0),
+                  child: Text(
+                    widget.school.info,
                   ),
                 ),
-              ),
-            ],
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  "Štruktúra štúdia",
-                  style: const TextStyle(
-                    fontSize: 25.0,
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "Prijímacie skúšky",
+                    style: const TextStyle(
+                      fontSize: 25.0,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  "Študentský život",
-                  style: const TextStyle(
-                    fontSize: 25.0,
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "Štruktúra štúdia",
+                    style: const TextStyle(
+                      fontSize: 25.0,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ][this._tabIndex]),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "Študentský život",
+                    style: const TextStyle(
+                      fontSize: 25.0,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ][this._tabIndex]),
       ),
     );
   }

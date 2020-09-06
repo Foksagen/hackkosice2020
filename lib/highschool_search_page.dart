@@ -28,14 +28,25 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
   void _updateResults() {
     this._schools = null;
     final results = <Widget>[];
-    for (final school in [postova, dopravna, srobarova]) {
-      if (school.name.toLowerCase().contains(this._controller.text.toLowerCase())) {
+    for (final school in [
+      postova,
+      dopravna,
+      srobarova,
+      gta,
+      spse,
+      gymes,
+      gpm
+    ]) {
+      if (school.name
+          .toLowerCase()
+          .contains(this._controller.text.toLowerCase())) {
         results.add(Padding(
           padding: const EdgeInsets.symmetric(vertical: 2.5, horizontal: 10.0),
           child: Card(
             elevation: 5.0,
             child: InkWell(
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolPage(school: school))),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => HighSchoolPage(school: school))),
               child: Container(
                 height: 100,
                 child: Center(
@@ -70,7 +81,8 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
                     borderSide: BorderSide(color: Colors.grey),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Theme.of(context).accentColor),
+                    borderSide:
+                        BorderSide(color: Theme.of(context).accentColor),
                   ),
                   prefixIcon: Icon(
                     Icons.search,
