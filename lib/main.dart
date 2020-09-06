@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tokuho Schools',
       theme: ThemeData(
+        primaryColor: Color.fromRGBO(236, 193, 156, 1.0),
+        accentColor: Color.fromRGBO(30, 132, 127, 1.0),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -33,6 +35,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(236, 193, 156, 1.0),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -57,7 +60,11 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width / 7, top: 50.0, right: MediaQuery.of(context).size.width / 7, bottom: 4.0),
+                padding: EdgeInsets.only(
+                    left: MediaQuery.of(context).size.width / 7,
+                    top: 50.0,
+                    right: MediaQuery.of(context).size.width / 7,
+                    bottom: 4.0),
                 child: createCard(
                   "Stredné školy",
                   Text(
@@ -65,13 +72,16 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.start,
                     style: descStyle,
                   ),
-                  "https://r-cf.bstatic.com/images/hotel/max1024x768/116/116281457.jpg",
-                      () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolsSearchPage())),
+                  "https://images.adsttc.com/media/images/5ddf/acb9/3312/fdb8/d300/011b/slideshow/_A7R0117_HUNDVEN-CLEMENTS_PHOTOGRAPHY.jpg?1574939805",
+                  () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => HighSchoolsSearchPage())),
                   biggerImage: true,
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: MediaQuery.of(context).size.width / 7),
+                padding: EdgeInsets.symmetric(
+                    vertical: 4.0,
+                    horizontal: MediaQuery.of(context).size.width / 7),
                 child: createCard(
                   "Vysoké školy",
                   Text(
@@ -79,8 +89,9 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.start,
                     style: descStyle,
                   ),
-                  "https://r-cf.bstatic.com/images/hotel/max1024x768/116/116281457.jpg",
-                      () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => UniversitySearchPage())),
+                  "https://www.telegraph.co.uk/content/dam/news/2019/06/07/Corpus-2_trans_NvBQzQNjv4BqIlB8N0-eCKir34PrHbfoBIDwrxTXZUARyEWi5sfgXlA.jpg",
+                  () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => UniversitySearchPage())),
                   biggerImage: true,
                 ),
               ),
