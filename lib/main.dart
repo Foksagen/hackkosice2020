@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontFamily: "Nunito",
-                  fontSize: 15,
+                  fontSize: 35,
                 ),
               ),
               Text(
