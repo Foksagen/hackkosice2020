@@ -13,7 +13,8 @@ class HighSchoolPage extends StatefulWidget {
   HighSchoolPageState createState() => HighSchoolPageState();
 }
 
-class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderStateMixin {
+class HighSchoolPageState extends State<HighSchoolPage>
+    with TickerProviderStateMixin {
   TabController _tabController;
   int _tabIndex = 0;
 
@@ -46,7 +47,9 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
                         Container(
                           height: 250,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(topLeft: Radius.circular(4.0), topRight: Radius.circular(4.0)),
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(4.0),
+                                topRight: Radius.circular(4.0)),
                             image: DecorationImage(
                               fit: BoxFit.cover,
                               alignment: FractionalOffset.bottomCenter,
@@ -57,11 +60,13 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
                         Padding(
                           padding: const EdgeInsets.only(top: 240.0),
                           child: Container(
-                            padding: const EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0),
+                            padding: const EdgeInsets.only(
+                                left: 20.0, top: 10.0, right: 20.0),
                             decoration: BoxDecoration(
-                              color: Theme.of(context).scaffoldBackgroundColor,
-                              borderRadius: BorderRadius.all(Radius.circular(15.0))
-                            ),
+                                color:
+                                    Theme.of(context).scaffoldBackgroundColor,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15.0))),
                             child: Text(
                               widget.school.name,
                               style: const TextStyle(
@@ -73,12 +78,14 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 5.0, horizontal: 20.0),
                       child: Row(
                         children: <Widget>[
                           Icon(
                             Icons.location_on,
                             size: 14,
+                            color: Color.fromRGBO(30, 132, 127, 1.0),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 4.0),
@@ -96,14 +103,17 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(left: 20.0, top: 10.0, right: 2.5, bottom: 10.0),
+                          padding: const EdgeInsets.only(
+                              left: 20.0, top: 10.0, right: 2.5, bottom: 10.0),
                           child: Icon(
                             Icons.people,
                             size: 35,
+                            color: Color.fromRGBO(30, 132, 127, 1.0),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 2.5, top: 10.0, right: 20.0, bottom: 10.0),
+                          padding: const EdgeInsets.only(
+                              left: 2.5, top: 10.0, right: 20.0, bottom: 10.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -133,7 +143,9 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
                 child: Column(
                   children: [
                     TabBar(
-                      onTap: (index) => this.setState(() => this._tabIndex = index),
+                      indicatorColor: Color.fromRGBO(30, 132, 127, 1.0),
+                      onTap: (index) =>
+                          this.setState(() => this._tabIndex = index),
                       controller: this._tabController,
                       tabs: [
                         Tab(
@@ -163,85 +175,88 @@ class HighSchoolPageState extends State<HighSchoolPage> with TickerProviderState
                       ],
                     )
                   ]..add(Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Informácie",
-                            style: const TextStyle(
-                              fontSize: 25.0,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10.0),
-                            child: Text(
-                              widget.school.info,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              "Štúdium",
+                      padding: const EdgeInsets.all(20.0),
+                      child: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Informácie",
                               style: const TextStyle(
                                 fontSize: 25.0,
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                left: 10.0, right: 10.0, bottom: 10.0),
-                            child: Column(children: [
-                              Text("Vyskúšajte si cvičné testy"),
-                              InkWell(
-                                child: new Text("Test MAT"),
-                                onTap: () => launch(widget.school.practiceTests[0]),
-                              ),
-                              InkWell(
-                                child: new Text("Test SJL"),
-                                onTap: () => launch(widget.school.practiceTests[1]),
-                              )
-                            ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              "Študentský život",
-                              style: const TextStyle(
-                                fontSize: 25.0,
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10.0),
+                              child: Text(
+                                widget.school.info,
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              "Poloha a kontakt",
-                              style: const TextStyle(
-                                fontSize: 25.0,
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Text(
+                                "Štúdium",
+                                style: const TextStyle(
+                                  fontSize: 25.0,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ][this._tabIndex],
-                  )),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 10.0, right: 10.0, bottom: 10.0),
+                              child: Column(
+                                children: [
+                                  Text("Vyskúšajte si cvičné testy"),
+                                  InkWell(
+                                    child: new Text("Test MAT"),
+                                    onTap: () =>
+                                        launch(widget.school.practiceTests[0]),
+                                  ),
+                                  InkWell(
+                                    child: new Text("Test SJL"),
+                                    onTap: () =>
+                                        launch(widget.school.practiceTests[1]),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Text(
+                                "Študentský život",
+                                style: const TextStyle(
+                                  fontSize: 25.0,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Text(
+                                "Poloha a kontakt",
+                                style: const TextStyle(
+                                  fontSize: 25.0,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ][this._tabIndex],
+                    )),
                 ),
               ),
             ),
