@@ -1,7 +1,13 @@
+enum HighSchoolTypes{
+  gymnazium,
+  odborna_skola,
+}
+
 class HighSchool {
   final String name;
   final List<String> classTypes;
   final String studyLength;
+  final HighSchoolTypes type;
   final List<String> contact;
   final String info;
   final String infoTitle;
@@ -12,12 +18,15 @@ class HighSchool {
   final int succesrate;
   final String picture;
   final String web;
+  final List<String> events;
+  final List<String> clubs;
 
   const HighSchool(
       {this.name,
       this.students,
       this.infoTitle,
       this.classTypes,
+      this.type,
       this.studyLength,
       this.contact,
       this.info,
@@ -26,12 +35,15 @@ class HighSchool {
       this.succesrate,
       this.picture,
       this.web,
+      this.events,
+      this.clubs,
       this.vidUrl});
 }
 
 const postova = HighSchool(
     name: "Gymnázium, Poštová 9, Košice",
     classTypes: ["všeobecná", "anglická", "matematická"],
+    type: HighSchoolTypes.gymnazium,
     studyLength: "4",
     contact: [
       "Poštová 9, Košice",
@@ -51,8 +63,10 @@ const postova = HighSchool(
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
     students: 513,
-    picture: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gymnazium_postova.jpg",
-    web: "https://www.gympos.sk/");
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/31/Gymnazium_postova.jpg',
+    web: "https://www.gympos.sk/",
+    clubs: ["Školská kapela","Školský časopis Homo Studiosus","Štafetový tím","Volejbalový tím","Študenstská rada","Debatný klub","Filozofický klub","Literárny klub"],
+    events: ["Imatrikulácia","Ples Poštovákov","Majáles","Študentský deň"]);
 
 const dopravna = HighSchool(
   name: "Stredná priemyselná škola dopravná",
@@ -61,6 +75,7 @@ const dopravna = HighSchool(
     "prevádzka a ekonomika dopravy",
     "technika a prevádzka dopravy, dopravná akadémia"
   ],
+  type: HighSchoolTypes.odborna_skola,
   studyLength: "4",
   contact: [
     "Hlavná 113, 040 01 Košice",
@@ -79,6 +94,8 @@ const dopravna = HighSchool(
   picture: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Kosice_Hlavna113.jpg",
   //succesrate: 100,
   web: "https://spsdke.edupage.org/",
+  clubs: [""],
+  events: [""]
 );
 
 const srobarova = HighSchool(
@@ -90,6 +107,7 @@ const srobarova = HighSchool(
     "matematická",
     "informatická"
   ],
+  type: HighSchoolTypes.gymnazium,
   studyLength: "4",
   contact: [
     "Šrobárova 1, Košice",
@@ -110,6 +128,8 @@ const srobarova = HighSchool(
   students: 597,
   picture: "https://m.smedata.sk/api-media/media/image/sme/1/23/2332051/2332051_1200x.jpeg?rev=3",
   web: "https://www.srobarka.sk/",
+  clubs: [""],
+  events: [""]
 );
 
 const spse = HighSchool(
@@ -120,6 +140,7 @@ const spse = HighSchool(
       "počitačové systémy",
       "informačné a sieťové technológie",
     ],
+    type: HighSchoolTypes.odborna_skola,
     studyLength: "4",
     contact: [
       "Komenského 44, Košice",
@@ -136,7 +157,9 @@ const spse = HighSchool(
     vidUrl: "",
     students: 834,
     picture: "http://spse-ke.fei.tuke.sk/web/dentotvdveri.imgs/denotv3.jpg",
-    web: "https://www.spseke.sk/");
+    web: "https://www.spseke.sk/",
+    clubs: [""],
+    events: [""]);
 
 const gpm = HighSchool(
     name: "Gymnázium, Park mládeže 5, Košice",
@@ -146,6 +169,7 @@ const gpm = HighSchool(
       "Klasické štúdium",
       "Štúdium s rozšíreným vyučovaním anglického jazyka",
     ],
+    type: HighSchoolTypes.gymnazium,
     studyLength: "4-5",
     contact: [
       "Park mládeže 5, 040 01 Košice",
@@ -162,11 +186,14 @@ const gpm = HighSchool(
     vidUrl: "",
     students: 620,
     picture: "https://m.smedata.sk/api-media/media/image/sme/0/38/3881650/3881650_1200x.jpeg?rev=3",
-    web: "https://gpm.edupage.org/");
+    web: "https://gpm.edupage.org/",
+    clubs: [""],
+    events: [""]);
 
 const gta = HighSchool(
     name: "Gymnáziumsv. Tomáša Akvinského",
     classTypes: ["8-ročná forma", "4-ročná forma"],
+    type: HighSchoolTypes.gymnazium,
     studyLength: "4/8",
     contact: [
       "Zbrojničná 3, 040 01 Košice",
@@ -183,7 +210,9 @@ const gta = HighSchool(
     vidUrl: "",
     students: 560,
     picture: "https://upload.wikimedia.org/wikipedia/commons/5/5f/GTA-Ko%C5%A1ice-1.jpg",
-    web: "https://www.gta.sk/");
+    web: "https://www.gta.sk/",
+    clubs: [""],
+    events: [""]);
 
 const gymes = HighSchool(
     name: "Gymnázium sv.Edity Steinovej Košice",
@@ -205,4 +234,6 @@ const gymes = HighSchool(
     vidUrl: "",
     students: 700,
     picture: "https://m.smedata.sk/api-media/media/image/sme/3/14/1463153/1463153_1200x.jpg?rev=1",
-    web: "https://gymes.edupage.org/");
+    web: "https://gymes.edupage.org/",
+    clubs: [""],
+    events: [""]);
