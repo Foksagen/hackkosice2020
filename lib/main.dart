@@ -68,9 +68,7 @@ class _HomePageState extends State<HomePage> {
                 child: createCard(
                   "Stredné školy",
                   Text(
-                    "Lorem ipsum",
-                    textAlign: TextAlign.start,
-                    style: descStyle,
+                    "",
                   ),
                   "https://images.adsttc.com/media/images/5ddf/acb9/3312/fdb8/d300/011b/slideshow/_A7R0117_HUNDVEN-CLEMENTS_PHOTOGRAPHY.jpg?1574939805",
                   () => Navigator.of(context).push(MaterialPageRoute(
@@ -85,9 +83,7 @@ class _HomePageState extends State<HomePage> {
                 child: createCard(
                   "Vysoké školy",
                   Text(
-                    "Lorem ipsum",
-                    textAlign: TextAlign.start,
-                    style: descStyle,
+                    "",
                   ),
                   "https://www.telegraph.co.uk/content/dam/news/2019/06/07/Corpus-2_trans_NvBQzQNjv4BqIlB8N0-eCKir34PrHbfoBIDwrxTXZUARyEWi5sfgXlA.jpg",
                   () => Navigator.of(context).push(MaterialPageRoute(
