@@ -7,6 +7,10 @@ import 'package:hackkosice2020/university_page.dart';
 import 'careers_search_page.dart';
 
 class UniByCareer extends StatefulWidget {
+  final String career;
+
+  UniByCareer({Key key, this.career}) : super(key: key);
+
   @override
   UniByCareerState createState() => UniByCareerState();
 }
@@ -31,30 +35,12 @@ class UniByCareerState extends State<UniByCareer> {
     this._schools = null;
     final results = <Widget>[];
     for (final school in [UPJS, TUKE, Komenskeho, MatejaBela]) {
-      if (school.name
-          .toLowerCase()
-          .contains(this._controller.text.toLowerCase())) {
+      if (school.careers.keys.contains(widget.career)) {
         results.add(Padding(
           padding: const EdgeInsets.symmetric(vertical: 2.5, horizontal: 10.0),
           child: createCard(
             school.name,
-            Row(
-              children: <Widget>[
-                Icon(
-                  Icons.location_on,
-                  size: 14,
-                  color: Colors.grey,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 4.0),
-                  child: Text(
-                    school.contact[0],
-                    textAlign: TextAlign.start,
-                    style: descStyle,
-                  ),
-                ),
-              ],
-            ),
+            Text(school.careers[widget.career]),
             school.picture,
             () => Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) => UniversityPage(school: school))),
@@ -96,14 +82,6 @@ class UniByCareerState extends State<UniByCareer> {
                         Icons.search,
                         color: Colors.grey[800],
                       ),
-                      suffixIcon: IconButton(
-                        icon: Icon(
-                          Icons.tune,
-                          color: Colors.grey[800],
-                        ),
-                        //color: this._showFilters ? Theme.of(context).accentColor : Colors.grey,
-                        //onPressed: () => setState(() => this._showFilters = !this._showFilters),
-                      ),
                     ),
                     onChanged: (value) => this._updateResults(),
                     onSubmitted: (value) => this._updateResults(),
@@ -122,13 +100,6 @@ class UniByCareerState extends State<UniByCareer> {
                 : CircularProgressIndicator(),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => CareersSearchPage())),
-        label: Text("Profesie"),
-        icon: Icon(Icons.work),
-        //backgroundColor: Colors.green,
       ),
     );
   }

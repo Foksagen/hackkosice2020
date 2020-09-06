@@ -30,7 +30,7 @@ class UniversityPageState extends State<UniversityPage>
         child: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
-              expandedHeight: 390.0,
+              expandedHeight: 410.0,
               backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               flexibleSpace: FlexibleSpaceBar(
                 background: Column(

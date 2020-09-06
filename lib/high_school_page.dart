@@ -37,7 +37,7 @@ class HighSchoolPageState extends State<HighSchoolPage>
         child: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
-              expandedHeight: 390.0,
+              expandedHeight: 410.0,
               backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               flexibleSpace: FlexibleSpaceBar(
                 background: Column(
@@ -57,20 +57,22 @@ class HighSchoolPageState extends State<HighSchoolPage>
                             ),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 240.0),
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 20.0, top: 10.0, right: 20.0),
-                            decoration: BoxDecoration(
-                                color:
-                                    Theme.of(context).scaffoldBackgroundColor,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(15.0))),
-                            child: Text(
-                              widget.school.name,
-                              style: const TextStyle(
-                                fontSize: 25,
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 230.0),
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 20.0, top: 10.0, right: 20.0),
+                              decoration: BoxDecoration(
+                                  color:
+                                  Theme.of(context).scaffoldBackgroundColor,
+                                  borderRadius:
+                                  BorderRadius.all(Radius.circular(15.0))),
+                              child: Text(
+                                widget.school.name,
+                                style: const TextStyle(
+                                  fontSize: 25,
+                                ),
                               ),
                             ),
                           ),
