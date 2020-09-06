@@ -253,6 +253,81 @@ class HighSchoolPageState extends State<HighSchoolPage>
                                 ),
                               ),
                             ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10.0),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.location_on,
+                                        size: 14,
+                                        color: Colors.grey,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 4.0),
+                                        child: Text(
+                                          widget.school.contact[0],
+                                          textAlign: TextAlign.start,
+                                          style: descStyle,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.local_phone,
+                                        size: 14,
+                                        color: Colors.grey,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 4.0),
+                                        child: Text(
+                                          widget.school.contact[1],
+                                          textAlign: TextAlign.start,
+                                          style: descStyle,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.email,
+                                        size: 14,
+                                        color: Colors.grey,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 4.0),
+                                        child: Text(
+                                          widget.school.contact[2],
+                                          textAlign: TextAlign.start,
+                                          style: descStyle,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.person_pin,
+                                        size: 14,
+                                        color: Colors.grey,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 4.0),
+                                        child: Text(
+                                          widget.school.contact[3],
+                                          textAlign: TextAlign.start,
+                                          style: descStyle,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ]
+                              )
+                            ),
                           ],
                         ),
                       ][this._tabIndex],
