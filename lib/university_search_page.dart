@@ -69,58 +69,59 @@ class UniversitySearchPageState extends State<UniversitySearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Material(
-              borderRadius: BorderRadius.all(Radius.circular(25.0)),
-              color: Colors.transparent,
-              elevation: 5.0,
-              child: AnimatedContainer(
-                duration: const Duration(seconds: 1),
-                curve: Curves.fastOutSlowIn,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(25.0))),
-                child: TextField(
-                  controller: this._controller,
-                  decoration: InputDecoration(
-                    hintText: "Vyhľadať",
-                    hintStyle: const TextStyle(
-                      color: Colors.grey,
-                    ),
-                    border: InputBorder.none,
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.grey[800],
-                    ),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        Icons.tune,
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Material(
+                borderRadius: BorderRadius.all(Radius.circular(25.0)),
+                color: Colors.transparent,
+                elevation: 5.0,
+                child: AnimatedContainer(
+                  duration: const Duration(seconds: 1),
+                  curve: Curves.fastOutSlowIn,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(25.0))),
+                  child: TextField(
+                    controller: this._controller,
+                    decoration: InputDecoration(
+                      hintText: "Vyhľadať",
+                      hintStyle: const TextStyle(
+                        color: Colors.grey,
+                      ),
+                      border: InputBorder.none,
+                      prefixIcon: Icon(
+                        Icons.search,
                         color: Colors.grey[800],
                       ),
-                      //color: this._showFilters ? Theme.of(context).accentColor : Colors.grey,
-                      //onPressed: () => setState(() => this._showFilters = !this._showFilters),
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          Icons.tune,
+                          color: Colors.grey[800],
+                        ),
+                        //color: this._showFilters ? Theme.of(context).accentColor : Colors.grey,
+                        //onPressed: () => setState(() => this._showFilters = !this._showFilters),
+                      ),
                     ),
+                    onChanged: (value) => this._updateResults(),
+                    onSubmitted: (value) => this._updateResults(),
                   ),
-                  onChanged: (value) => this._updateResults(),
-                  onSubmitted: (value) => this._updateResults(),
                 ),
               ),
             ),
-          ),
-          this._schools != null
-              ? Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: this._schools,
+            this._schools != null
+                ? Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: this._schools,
+                      ),
                     ),
-                  ),
-                )
-              : CircularProgressIndicator(),
-        ],
+                  )
+                : CircularProgressIndicator(),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => Navigator.of(context)
