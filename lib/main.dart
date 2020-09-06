@@ -14,11 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tokuho Schools',
       theme: ThemeData(
-        primaryColor: Color.fromRGBO(236, 193, 156, 1.0),
-        accentColor: Color.fromRGBO(30, 132, 127, 1.0),
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+          primaryColor: Color.fromRGBO(30, 132, 127, 1.0),
+          accentColor: Color.fromRGBO(30, 132, 127, 1.0),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          scaffoldBackgroundColor: Color.fromARGB(
+              255, 236, 193, 156) //fromRGBO(236, 193, 156, 0.01),
+          ),
       home: HomePage(),
     );
   }
@@ -35,7 +37,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(236, 193, 156, 1.0),
       body: SafeArea(
         child: Center(
           child: Column(
