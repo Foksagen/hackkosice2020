@@ -42,6 +42,14 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Text(
+                "Tohuko Schools",
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontFamily: "Nunito",
+                  fontSize: 15,
+                ),
+              ),
+              Text(
                 "Vitajte",
                 textAlign: TextAlign.center,
                 style: const TextStyle(
