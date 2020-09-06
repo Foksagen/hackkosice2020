@@ -1,5 +1,3 @@
-import 'dart:html';
-
 class HighSchool {
   final String name;
   final List<String> classTypes;
@@ -48,12 +46,12 @@ const postova = HighSchool(
       "https://www.gympos.sk/files/vyskusajte-sa/test_PS_2014.htm",
       "https://www.gympos.sk/files/vyskusajte-sa/test_PS_SJL.htm"
     ],
-    succesrate: 53,
-    date: "19.Máj - 18.Júl",
+    //succesrate: 53,
+    date: "19.05 - 18.07",
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
     students: 513,
-    picture: 'gympos.jpg',
+    picture: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gymnazium_postova.jpg",
     web: "https://www.gympos.sk/");
 
 const dopravna = HighSchool(
@@ -78,8 +76,8 @@ const dopravna = HighSchool(
   date: "15.06. - 23.06.",
   vidUrl: "",
   students: 456,
-  picture: 'dopravna.jpg',
-  succesrate: 100,
+  picture: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Kosice_Hlavna113.jpg",
+  //succesrate: 100,
   web: "https://spsdke.edupage.org/",
 );
 
@@ -106,10 +104,11 @@ const srobarova = HighSchool(
     "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf",
     "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf"
   ],
-  succesrate: 44,
-  date: "19.Máj - 18.Júl",
+  //succesrate: 44,
+  date: "19.05 - 18.07",
   vidUrl: "",
   students: 597,
+  picture: "https://m.smedata.sk/api-media/media/image/sme/1/23/2332051/2332051_1200x.jpeg?rev=3",
   web: "https://www.srobarka.sk/",
 );
 
@@ -132,10 +131,11 @@ const spse = HighSchool(
         "Naša škola umožňuje štvorročné štúdium s maturitou v troch študijných odboroch 2675 M Elektrotechnika, 3918 M Technické lýceum, čo je označenie pre výberové školy podobné našim gymnáziám, ktoré v krajinách západnej Európy úspešne existujú už desiatky rokov a nový študijný odbor 2561M Informačné a sieťové technológie. V rámci štúdia sa prostredníctvom voliteľného predmetu elektrotechnická spôsobilosť žiaci pripravujú na skúšku pre získanie elektrotechnickej spôsobilosti podľa § 21 Vyhl. 508/2009 Z.z.",
     infoTitle: "",
     practiceTests: [],
-    succesrate: 78,
+    //succesrate: 78,
     date: "",
     vidUrl: "",
     students: 834,
+    picture: "http://spse-ke.fei.tuke.sk/web/dentotvdveri.imgs/denotv3.jpg",
     web: "https://www.spseke.sk/");
 
 const gpm = HighSchool(
@@ -158,9 +158,10 @@ const gpm = HighSchool(
     infoTitle: "",
     practiceTests: [],
     succesrate: 89,
-    date: "19.5. - 29.5.",
+    date: "19.05. - 29.05.",
     vidUrl: "",
     students: 620,
+    picture: "https://m.smedata.sk/api-media/media/image/sme/0/38/3881650/3881650_1200x.jpeg?rev=3",
     web: "https://gpm.edupage.org/");
 
 const gta = HighSchool(
@@ -177,10 +178,11 @@ const gta = HighSchool(
         "Gymnázium svätého Tomáša Akvinského (skrátene GTA) je cirkevné katolícke gymnázium v Košiciach spravované kongregáciou sestier dominikánok. Vzniklo v roku 1991 ako štvorročné gymnázium a o päť rokov neskôr, v roku 1996, bolo rozšírené o triedu osemročného gymnázia.",
     infoTitle: "",
     practiceTests: [],
-    succesrate: 93,
-    date: "19.5. - 29.5.",
+    //succesrate: 93,
+    date: "19.05. - 29.05.",
     vidUrl: "",
     students: 560,
+    picture: "https://upload.wikimedia.org/wikipedia/commons/5/5f/GTA-Ko%C5%A1ice-1.jpg",
     web: "https://www.gta.sk/");
 
 const gymes = HighSchool(
@@ -198,8 +200,9 @@ const gymes = HighSchool(
     infoTitle:
         "Cieľom našej školy je presadzovať systém „otvorenej rodinnej školy“ pre najbližšiu komunitu a okolie.",
     practiceTests: [],
-    succesrate: 93,
-    date: "19.5. - 29.5.",
+    //succesrate: 93,
+    date: "19.05. - 29.05.",
     vidUrl: "",
     students: 700,
+    picture: "https://m.smedata.sk/api-media/media/image/sme/3/14/1463153/1463153_1200x.jpg?rev=1",
     web: "https://gymes.edupage.org/");

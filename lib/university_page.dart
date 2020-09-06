@@ -105,7 +105,7 @@ class UniversityPageState extends State<UniversityPage> with TickerProviderState
                             children: [
                               CircularProgressIndicator(
                                 value: widget.school.acceptanceRate / 100,
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.grey[350],
                               ),
                               Center(
                                 child: Text(

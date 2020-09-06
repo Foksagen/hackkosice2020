@@ -53,31 +53,33 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Column(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: TextField(
-              controller: this._controller,
-              decoration: InputDecoration(
-                hintText: "Vyhľadať",
-                hintStyle: const TextStyle(
-                  color: Colors.grey,
+            child: Material(
+              elevation: 5.0,
+              child: TextField(
+                controller: this._controller,
+                decoration: InputDecoration(
+                  hintText: "Vyhľadať",
+                  hintStyle: const TextStyle(
+                    color: Colors.grey,
+                  ),
+                  border: const OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Theme.of(context).accentColor),
+                  ),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                  ),
                 ),
-                border: const OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.grey),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Theme.of(context).accentColor),
-                ),
-                prefixIcon: Icon(
-                  Icons.search,
-                  color: Colors.grey,
-                ),
+                onChanged: (value) => this._updateResults(),
+                onSubmitted: (value) => this._updateResults(),
               ),
-              onChanged: (value) => this._updateResults(),
-              onSubmitted: (value) => this._updateResults(),
             ),
           ),
           this._schools != null

@@ -29,7 +29,7 @@ class UniversitySearchPageState extends State<UniversitySearchPage> {
   void _updateResults() {
     this._schools = null;
     final results = <Widget>[];
-    for (final school in [UPJS, TUKE]) {
+    for (final school in [UPJS, TUKE, Komenskeho, MatejaBela]) {
       if (school.name
           .toLowerCase()
           .contains(this._controller.text.toLowerCase())) {

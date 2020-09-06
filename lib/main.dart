@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hackkosice2020/high_school_page.dart';
 
 import 'package:hackkosice2020/highschool_search_page.dart';
-import 'package:hackkosice2020/highschools.dart';
-import 'package:hackkosice2020/unis.dart';
-
-import 'package:hackkosice2020/university_page.dart';
+import 'package:hackkosice2020/ui.dart';
 import 'package:hackkosice2020/university_search_page.dart';
 
 void main() {
@@ -16,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Tokuho Schools',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -37,48 +33,51 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.symmetric(
-                  vertical: 4.0,
-                  horizontal: MediaQuery.of(context).size.width / 7),
-              child: Card(
-                elevation: 5.0,
-                child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => HighSchoolsSearchPage())),
-                  child: Container(
-                    height: 100,
-                    child: Center(
-                      child: Text("Stredné školy"),
-                    ),
-                  ),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Text(
+                "Vitajte",
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontFamily: "Nunito",
+                  fontSize: 40,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(
-                  vertical: 4.0,
-                  horizontal: MediaQuery.of(context).size.width / 7),
-              child: Card(
-                elevation: 5.0,
-                child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => UniversitySearchPage())),
-                  child: Container(
-                    height: 100,
-                    child: Center(
-                      child: Text("Vysoké školy"),
-                    ),
-                  ),
+              Text(
+                "Vyberte si typ škôl",
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontFamily: "Montserrat",
+                  fontSize: 25,
                 ),
               ),
-            ),
-          ],
+              Padding(
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width / 7, top: 50.0, right: MediaQuery.of(context).size.width / 7, bottom: 4.0),
+                child: createCard(
+                  "Stredné školy",
+                  "Lorem ipsum",
+                  "https://r-cf.bstatic.com/images/hotel/max1024x768/116/116281457.jpg",
+                      () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolsSearchPage())),
+                  biggerImage: true,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: MediaQuery.of(context).size.width / 7),
+                child: createCard(
+                  "Vysoké školy",
+                  "Lorem ipsum",
+                  "https://r-cf.bstatic.com/images/hotel/max1024x768/116/116281457.jpg",
+                      () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => UniversitySearchPage())),
+                  biggerImage: true,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
