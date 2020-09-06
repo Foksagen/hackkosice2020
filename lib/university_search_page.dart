@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hackkosice2020/ui.dart';
+import 'package:hackkosice2020/university_page.dart';
 
 import 'careers_search_page.dart';
-import 'university_page.dart';
 import 'unis.dart';
 
 class UniversitySearchPage extends StatefulWidget {
@@ -35,18 +36,29 @@ class UniversitySearchPageState extends State<UniversitySearchPage> {
           .contains(this._controller.text.toLowerCase())) {
         results.add(Padding(
           padding: const EdgeInsets.symmetric(vertical: 2.5, horizontal: 10.0),
-          child: Card(
-            elevation: 5.0,
-            child: InkWell(
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => UniversityPage(school: school))),
-              child: Container(
-                height: 100,
-                child: Center(
-                  child: Text(school.name),
+          child: createCard(
+            school.name,
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.location_on,
+                  size: 14,
+                  color: Colors.grey,
                 ),
-              ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 4.0),
+                  child: Text(
+                    school.contact[0],
+                    textAlign: TextAlign.start,
+                    style: descStyle,
+                  ),
+                ),
+              ],
             ),
+            school.picture,
+            () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => UniversityPage(school: school))),
+            biggerImage: true,
           ),
         ));
       }
@@ -62,26 +74,41 @@ class UniversitySearchPageState extends State<UniversitySearchPage> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: TextField(
-              controller: this._controller,
-              decoration: InputDecoration(
-                hintText: "Vyhľadať",
-                hintStyle: const TextStyle(
-                  color: Colors.grey,
-                ),
-                border: const OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.grey),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Theme.of(context).accentColor),
-                ),
-                prefixIcon: Icon(
-                  Icons.search,
-                  color: Colors.grey,
+            child: Material(
+              borderRadius: BorderRadius.all(Radius.circular(25.0)),
+              color: Colors.transparent,
+              elevation: 5.0,
+              child: AnimatedContainer(
+                duration: const Duration(seconds: 1),
+                curve: Curves.fastOutSlowIn,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(25.0))),
+                child: TextField(
+                  controller: this._controller,
+                  decoration: InputDecoration(
+                    hintText: "Vyhľadať",
+                    hintStyle: const TextStyle(
+                      color: Colors.grey,
+                    ),
+                    border: InputBorder.none,
+                    prefixIcon: Icon(
+                      Icons.search,
+                      color: Colors.grey[800],
+                    ),
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        Icons.tune,
+                        color: Colors.grey[800],
+                      ),
+                      //color: this._showFilters ? Theme.of(context).accentColor : Colors.grey,
+                      //onPressed: () => setState(() => this._showFilters = !this._showFilters),
+                    ),
+                  ),
+                  onChanged: (value) => this._updateResults(),
+                  onSubmitted: (value) => this._updateResults(),
                 ),
               ),
-              onChanged: (value) => this._updateResults(),
-              onSubmitted: (value) => this._updateResults(),
             ),
           ),
           this._schools != null

@@ -1,4 +1,4 @@
-enum HighSchoolTypes{
+enum HighSchoolTypes {
   gymnazium,
   odborna_skola,
 }
@@ -63,74 +63,84 @@ const postova = HighSchool(
     vidUrl:
         "https://drive.google.com/file/d/1Z4SL1Q-U_4pVHy6ehoTKkIXvzEz0Wbpo/view?usp=sharing",
     students: 513,
-    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/31/Gymnazium_postova.jpg',
+    picture:
+        'https://upload.wikimedia.org/wikipedia/commons/3/31/Gymnazium_postova.jpg',
     web: "https://www.gympos.sk/",
-    clubs: ["Školská kapela","Školský časopis Homo Studiosus","Štafetový tím","Volejbalový tím","Študenstská rada","Debatný klub","Filozofický klub","Literárny klub"],
-    events: ["Imatrikulácia","Ples Poštovákov","Majáles","Študentský deň"]);
+    clubs: [
+      "Školská kapela",
+      "Školský časopis Homo Studiosus",
+      "Štafetový tím",
+      "Volejbalový tím",
+      "Študenstská rada",
+      "Debatný klub",
+      "Filozofický klub",
+      "Literárny klub"
+    ],
+    events: ["Imatrikulácia", "Ples Poštovákov", "Majáles", "Študentský deň"]);
 
 const dopravna = HighSchool(
-  name: "Stredná priemyselná škola dopravná",
-  classTypes: [
-    "elektrotechnika v doprave a telekomunikáciách",
-    "prevádzka a ekonomika dopravy",
-    "technika a prevádzka dopravy, dopravná akadémia"
-  ],
-  type: HighSchoolTypes.odborna_skola,
-  studyLength: "4",
-  contact: [
-    "Hlavná 113, 040 01 Košice",
-    "+42155/727 70 11",
-    "spsdke@spsdopke.edu.sk",
-    "Hospodár, Martin, Ing."
-  ],
-  info:
-      "Ponúkame: komplexné štvorročné vzdelanie vo všetkých oblastiach dopravy, pôšt a telekomunikácií; profesionálnu prípravu na technicko-hospodárske, prevádzkové činnosti, vysokokvalifikovaných    špecializovaných odborníkov v štátnom i súkromnom sektore, vrátane prípravy na samostatné  podnikanie - štúdium sa končí maturitnou skúškou; praktickú prípravu žiakov v zahraničí v rámci medzinárodných projektov; absolventi školy sú pripravení aj pre vysokoškolské štúdium najmä na technických VŠ so zameraním na dopravu, elektrotechniku, strojárenstvo, ekonomiku a pod.",
-  infoTitle:
-      "Stredná priemyselná škola dopravná od šk.roku 1967/68 vychováva odborníkov v oblasti dopravy.",
-  practiceTests: [""],
-  date: "15.06. - 23.06.",
-  vidUrl: "",
-  students: 456,
-  picture: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Kosice_Hlavna113.jpg",
-  //succesrate: 100,
-  web: "https://spsdke.edupage.org/",
-  clubs: [""],
-  events: [""]
-);
+    name: "Stredná priemyselná škola dopravná",
+    classTypes: [
+      "elektrotechnika v doprave a telekomunikáciách",
+      "prevádzka a ekonomika dopravy",
+      "technika a prevádzka dopravy, dopravná akadémia"
+    ],
+    type: HighSchoolTypes.odborna_skola,
+    studyLength: "4",
+    contact: [
+      "Hlavná 113, 040 01 Košice",
+      "+42155/727 70 11",
+      "spsdke@spsdopke.edu.sk",
+      "Hospodár, Martin, Ing."
+    ],
+    info:
+        "Ponúkame: komplexné štvorročné vzdelanie vo všetkých oblastiach dopravy, pôšt a telekomunikácií; profesionálnu prípravu na technicko-hospodárske, prevádzkové činnosti, vysokokvalifikovaných    špecializovaných odborníkov v štátnom i súkromnom sektore, vrátane prípravy na samostatné  podnikanie - štúdium sa končí maturitnou skúškou; praktickú prípravu žiakov v zahraničí v rámci medzinárodných projektov; absolventi školy sú pripravení aj pre vysokoškolské štúdium najmä na technických VŠ so zameraním na dopravu, elektrotechniku, strojárenstvo, ekonomiku a pod.",
+    infoTitle:
+        "Stredná priemyselná škola dopravná od šk.roku 1967/68 vychováva odborníkov v oblasti dopravy.",
+    practiceTests: [""],
+    date: "15.06. - 23.06.",
+    vidUrl: "",
+    students: 456,
+    picture:
+        "https://upload.wikimedia.org/wikipedia/commons/7/7a/Kosice_Hlavna113.jpg",
+    //succesrate: 100,
+    web: "https://spsdke.edupage.org/",
+    clubs: [""],
+    events: [""]);
 
 const srobarova = HighSchool(
-  name: "Gymnázium, Šrobárova 1, Košice",
-  classTypes: [
-    "všeobecná",
-    "anglická",
-    "nemecká",
-    "matematická",
-    "informatická"
-  ],
-  type: HighSchoolTypes.gymnazium,
-  studyLength: "4",
-  contact: [
-    "Šrobárova 1, Košice",
-    "055/6226604",
-    "frankovicova@srobarka.sk",
-    "Mgr. PaedDr. Frankovičová Zlatica"
-  ],
-  info:
-      "Výchovu a vzdelávanie na našej škole realizujeme viac ako 128 rokov. Na škole študuje 545 žiakov a pôsobí 40 učiteľov, nemecký lektor a anglický lektor.Hlavným poslaním nášho gymnázia je pripravovať vzdelaných a flexibilných absolventov, ktorí budú úspešní na ktoromkoľvek type vysokej školy, nájdu uplatnenie na domácom i medzinárodnom trhu práce.Zárukou kvalitnej výuky na našej škole sú kvalitní pedagógovia a kvalitné materiálovo-technické vybavenie učební. Vďaka získanému statusu partnerskej školy Prírodovedeckej fakulty v Košiciach (toto partnerstvo sme získali na základe toho, že sme nositeľmi tvorivého prírodovedného vzdelávania, ktoré sa výraznou mierou zaslúži o popularizáciu prírodných vied medzi mladými ľuďmi), úzko spolupracujeme s fakultou.",
-  infoTitle: "Škola s tradíciou",
-  practiceTests: [
-    "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf",
-    "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf"
-  ],
-  //succesrate: 44,
-  date: "19.05 - 18.07",
-  vidUrl: "",
-  students: 597,
-  picture: "https://m.smedata.sk/api-media/media/image/sme/1/23/2332051/2332051_1200x.jpeg?rev=3",
-  web: "https://www.srobarka.sk/",
-  clubs: [""],
-  events: [""]
-);
+    name: "Gymnázium, Šrobárova 1, Košice",
+    classTypes: [
+      "všeobecná",
+      "anglická",
+      "nemecká",
+      "matematická",
+      "informatická"
+    ],
+    type: HighSchoolTypes.gymnazium,
+    studyLength: "4",
+    contact: [
+      "Šrobárova 1, Košice",
+      "055/6226604",
+      "frankovicova@srobarka.sk",
+      "Mgr. PaedDr. Frankovičová Zlatica"
+    ],
+    info:
+        "Výchovu a vzdelávanie na našej škole realizujeme viac ako 128 rokov. Na škole študuje 545 žiakov a pôsobí 40 učiteľov, nemecký lektor a anglický lektor.Hlavným poslaním nášho gymnázia je pripravovať vzdelaných a flexibilných absolventov, ktorí budú úspešní na ktoromkoľvek type vysokej školy, nájdu uplatnenie na domácom i medzinárodnom trhu práce.Zárukou kvalitnej výuky na našej škole sú kvalitní pedagógovia a kvalitné materiálovo-technické vybavenie učební. Vďaka získanému statusu partnerskej školy Prírodovedeckej fakulty v Košiciach (toto partnerstvo sme získali na základe toho, že sme nositeľmi tvorivého prírodovedného vzdelávania, ktoré sa výraznou mierou zaslúži o popularizáciu prírodných vied medzi mladými ľuďmi), úzko spolupracujeme s fakultou.",
+    infoTitle: "Škola s tradíciou",
+    practiceTests: [
+      "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf",
+      "https://www.srobarka.sk/wp-content/documents/modelove-testy/2018/slovensky-jazyk-a-literatura.pdf"
+    ],
+    //succesrate: 44,
+    date: "19.05 - 18.07",
+    vidUrl: "",
+    students: 597,
+    picture:
+        "https://m.smedata.sk/api-media/media/image/sme/1/23/2332051/2332051_1200x.jpeg?rev=3",
+    web: "https://www.srobarka.sk/",
+    clubs: [""],
+    events: [""]);
 
 const spse = HighSchool(
     name: "Stredná priemyselná škola elektrotechnická",
@@ -156,7 +166,8 @@ const spse = HighSchool(
     date: "",
     vidUrl: "",
     students: 834,
-    picture: "http://spse-ke.fei.tuke.sk/web/dentotvdveri.imgs/denotv3.jpg",
+    picture:
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Stredn%C3%A1_priemyseln%C3%A1_%C5%A1kola_elektrotechnick%C3%A1_-_panoramio.jpg",
     web: "https://www.spseke.sk/",
     clubs: [""],
     events: [""]);
@@ -185,7 +196,8 @@ const gpm = HighSchool(
     date: "19.05. - 29.05.",
     vidUrl: "",
     students: 620,
-    picture: "https://m.smedata.sk/api-media/media/image/sme/0/38/3881650/3881650_1200x.jpeg?rev=3",
+    picture:
+        "https://m.smedata.sk/api-media/media/image/sme/0/38/3881650/3881650_1200x.jpeg?rev=3",
     web: "https://gpm.edupage.org/",
     clubs: [""],
     events: [""]);
@@ -209,7 +221,8 @@ const gta = HighSchool(
     date: "19.05. - 29.05.",
     vidUrl: "",
     students: 560,
-    picture: "https://upload.wikimedia.org/wikipedia/commons/5/5f/GTA-Ko%C5%A1ice-1.jpg",
+    picture:
+        "https://upload.wikimedia.org/wikipedia/commons/5/5f/GTA-Ko%C5%A1ice-1.jpg",
     web: "https://www.gta.sk/",
     clubs: [""],
     events: [""]);
@@ -233,7 +246,8 @@ const gymes = HighSchool(
     date: "19.05. - 29.05.",
     vidUrl: "",
     students: 700,
-    picture: "https://m.smedata.sk/api-media/media/image/sme/3/14/1463153/1463153_1200x.jpg?rev=1",
+    picture:
+        "https://m.smedata.sk/api-media/media/image/sme/3/14/1463153/1463153_1200x.jpg?rev=1",
     web: "https://gymes.edupage.org/",
     clubs: [""],
     events: [""]);

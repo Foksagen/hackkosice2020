@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
 const UPJS = Uni(
   name: "Univerzita Pavla Jozefa Šafárika",
   classTypes: [

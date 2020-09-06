@@ -63,7 +63,8 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
               ],
             ),
             school.picture,
-            () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HighSchoolPage(school: school))),
+            () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => HighSchoolPage(school: school))),
             biggerImage: true,
           ),
         ));
@@ -87,7 +88,9 @@ class HighSchoolsSearchPageState extends State<HighSchoolsSearchPage> {
                 child: AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   curve: Curves.fastOutSlowIn,
-                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(25.0))),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(25.0))),
                   child: TextField(
                     controller: this._controller,
                     decoration: InputDecoration(

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hackkosice2020/highschools.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HighSchoolPage extends StatefulWidget {
   final HighSchool school;
@@ -258,9 +259,7 @@ class HighSchoolPageState extends State<HighSchoolPage>
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 10.0, right: 10.0, bottom: 10.0),
-                  child: Text(
-                    widget.school.info,
-                  ),
+                  child: Text(widget.school.info),
                 ),
               ],
             ),
@@ -276,6 +275,16 @@ class HighSchoolPageState extends State<HighSchoolPage>
                     ),
                   ),
                 ),
+                Padding(
+                    padding: const EdgeInsets.only(
+                        left: 10.0, right: 10.0, bottom: 10.0),
+                    child: Column(children: [
+                      Text("Vyskúšajte si cvičné testy"),
+                      InkWell(
+                        child: new Text("Test MAT"),
+                        onTap: () => launch(widget.school.practiceTests[0]),
+                      )
+                    ])),
               ],
             ),
             Column(
